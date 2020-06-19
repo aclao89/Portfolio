@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content= "width= device-width, initial-scale=1.0">
+        <title> Alex Lao Data Science Portfolio </title>
+        <link rel ="stylesheet"
+        href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel ="stylesheet"
+        href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity = "sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
+
+        <link href ="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link  rel ="stylesheet" href ="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src ="" alt="">
+            </div>
+            <button class ="nav-toggle" aria-label="toggle navigation">
+                <span class ="hamburger"></span>
+            </button>
+            <nav class = "nav">
+                <ul class = "nav__list">
+                        <li class ="nav__item"><a href="#home" class = "nav__link">Home</a></li>
+                        <li class ="nav__item"><a href="#services" class = "nav__link">Skills</a></li>
+                        <li class ="nav__item"><a href="#about" class = "nav__link">About me</a></li>
+                        <li class ="nav__item"><a href="#work" class = "nav__link">My Projects</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <section class ="intro" id="home">
+            <h1 class = "section__title section__title--intro">
+                 Hi, I am <strong>Alex Lao</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Front-end dev</p>
+            <img src ="img/headshot.jpg" alt="Alex's headshot" class ="intro__img">
+        </section>
+
+
+        <section class ="my-services" id="services">
+            <h2 class ="section__title section__title--services">What I do</h2>
+            <div class ="services">
+                <div class ="service">
+                    <h3>Data Cleaning & Preparation</h3>
+                    <p>Retrieving data from one or more sources can yield with different columns names and data types.Handling missing and inconsistent data that may affect your analysis.
+                        Data cleaning isn’t always considered “sexy”, but preparing data can actually be a lot of fun when treated as a problem-solving exercise.</p>
+                </div>
+
+                <div class ="service">
+                    <h3>Data Analysis & Exploration</h3>
+                    <p>Taking a business question or need and turning it into a data question. Data exploration is looking to find interesting trends or relationships in the data that could bring value to a business.
+                        Exploration might be guided by an original business question, but it also might be relatively unguided. By looking to find patterns and blips in the data, you may stumble across an opportunity for the business to decrease costs or increase growth!</p>
+                </div>
+
+                <div class ="service">
+                    <h3>Data Visualizations</h3>
+                    <p> Humans are visual creatures, and most people aren’t going to be able to get meaningful insight by looking at a giant spreadsheet of numbers.
+                    Creating clean, visually compelling charts that will help others understand the data. It also means avoiding things that are either difficult to interpret (like pie charts) or can be misleading (like manipulating axis values).</p>
+                </div>
+            </div>
+            <a href="#work" class ="btn">My Work</a>
+        </section>
+
+
+        <section class = "about-me" id="about">
+            <h2 class ="section__title section__title--about">About Me</h2>
+            <p class="section__subtitle section__subtitle--about">Fitness Professional turned Jr. Analyst</p>
+
+            <div class="about-me__body">
+                <p>Multidisciplinary, driven Data Analyst with skills in SQL, Python, Excel, and Tableau from UC Berkeley’s Data Visualization Bootcamp.
+                    Highly skilled in gathering, interpreting, and analyzing business data to identify patterns and trends that can enhance business opportunities and profit.
+                    Competent in condensing large datasets into powerful visualizations to paint a story that can be understood by non-technical audiences.
+                    Proven leader, recognized for effective communication skills and implementing best practices to enhance decision-making and drive mutual growth.
+                    My analytical problem-solving abilities combined with my ability to manage diverse groups, makes me a valuable addition to any team.</p>
+
+                <p>When I am not sitting in front of a computer, my hobbies are weightlifting, skateboarding, shooting hoops, and sipping on a selection of craft beers.
+                I am also a Certified Personal Trainer with over 7 years of experience and a Masters in Exercise Physiology. I still continue to train clients as my side hustle.</p>
+            </div>
+
+            <img src ="img/thailand.jpg" alt="Alex leaning against target" class = "about-me__img">
+        </section>
+
+
+        <section class = "my-work" id="work">
+            <h2 class ="section__title section__title--work">My Projects</h2>
+            <p class ="section__subtitle section__subtitle--work">A selection of my work</p>
+
+            <div class="portfolio">
+                <a href="#" class ="portfolio__item">
+                    <img src ="img/airbnb.jpg" class="portfolio__img">
+                </a>
+
+                <a href="#" class ="portfolio__item">
+                    <img src ="img/disney_netflix_cover.jpg"  class="portfolio__img">
+                </a>
+
+                <a href="#" class ="portfolio__item">
+                    <img src ="img/coronavirus-cdc.jpg"  class="portfolio__img">
+                </a>
+
+                <a href="#" class ="portfolio__item">
+                    <img src ="img/metrobike.jpg"  class="portfolio__img">
+                </a>
+
+                <a href="#" class ="portfolio__item">
+                    <img src ="img/allstarsrdme.jpg"  class="portfolio__img">
+                </a>
+
+
+            </div>
+        </section>
+
+        <footer class ="footer">
+            <a href ="mailto:alexclao89@gmail.com" class ="footer__link">alexclao89@gmail.com</a>
+            <ul class="social-list">
+                <li class = "social-list__item"><a class="social-list__link" href ="https://www.linkedin.com/in/alex-lao-17882182/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+                <li class = "social-list__item"><a class="social-list__link" href = "https://github.com/aclao89">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+                <li class = "social-list__item"><a class="social-list__link" href = "https://www.facebook.com/laolao89?ref=bookmarks">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+        </ul>
+
+    </footer>
+
+    <script src = "js/index.js"></script>
+    
+    </body>
+</html>
