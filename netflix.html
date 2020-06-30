@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content= "width= device-width, initial-scale=1.0">
+        <title> Alex Lao Data Science Portfolio </title>
+        <link rel ="stylesheet"
+        href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel ="stylesheet"
+        href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity = "sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
+
+        <link href ="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+
+        <link  rel ="stylesheet" href ="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src ="" alt="">
+            </div>
+            <button class ="nav-toggle" aria-label="toggle navigation">
+                <span class ="hamburger"></span>
+            </button>
+            <nav class = "nav">
+                <ul class = "nav__list">
+                        <li class ="nav__item"><a href="index.html#home" class = "nav__link">Home</a></li>
+                        <li class ="nav__item"><a href="index.html#services" class = "nav__link">Skills</a></li>
+                        <li class ="nav__item"><a href="index.html#about" class = "nav__link">About me</a></li>
+                        <li class ="nav__item"><a href="index.html#work" class = "nav__link">My Projects</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <section class ="intro">
+            <h1 class = "section__title section__title--intro">
+                 Netflix & Disney+ : EDA of Streaming Platforms
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Front-end dev</p>
+            <img src ="img/services.jpg" alt="Alex's headshot" class ="intro__img">
+        </section>
+
+
+        <div class ="portfolio-item-individual">
+
+            <img src="img/Netflix/disney_netflix_cover.jpg" alt="">
+        <p>Netflix originally started as a DVD sales and rental by mail then switched to focus on the DVD rental business. In 2007, Netflix expanded their business with streaming media. Netflix is an application that keeps growing up the graph with its popularity, shows and content.
+            Disney + launched the subscription video on-demand streaming service on November 12, 2019, in the United States, Canada, and the Netherlands. The service was expanded to Australia, New Zealand, and Puerto Rico a week later, and expanded to select European countries on March 24, 2020.
+            IMDB is an online database of information related to films, television programs, home videos, video games, and streaming content online – including cast, production crew and personal biographies, plot summaries, trivia, ratings, and fan and critical reviews.
+
+            This project is an Exploratory Data Analysis (EDA) of each streaming service, differences, similarities, and ratings distribution of content between the platforms.
+            </p>
+
+
+            <img src = "img/Netflix/nf_vs_nf_content.png">
+
+            <p>Movies takes up more than 50% of the content for both services. Interestingly, Disney + has stand-alone episodes, commonly produced by Disney, a service not performed by Netflix.</p>
+
+
+        <p>Netflix content addition</p>
+
+            <img src= "img/Netflix/content_nf_over_time.png">
+
+        <p> Netflix is continuously adding content every year. Movies have a larger presence than TV shows. In 2019, at least half of the listings were TV shows. The rise and popularity of TV shows can be attributed to the potential for extended narratives which a 2-2.5 hour movie may not fulfill. This is an interesting area that requires more data to gain insight. Additionally, the low amount of content from 2008 to 2014 needs to be further investigated. https://www.investopedia.com/articles/markets/051215/who-are-netflixs-main-competitors-nflx.asp </p>
+
+
+        <p>Disney+ content addition</p>
+
+            <img src = "img/Netflix/content_ds+_over_time.png">
+
+
+        <p>Disney + officially launched in the United States on November 12, 2019. This explains the intial surge in content added. However, it was interesting to see that some content was added in early October 2019, which was more than a month prior to the official release date. This could be a mistake in the data entry process.</p>
+
+
+        <p>Frequency of content release by month</p>
+
+            <img src ="img/Netflix/content_by_month.png">
+
+        <p>Netflix tends to release content during the fall months especially during onset of holiday season from Thanksgiving to Christmas. Since a majority of people will be with their families or on holiday vacation, it is the optimal time to release content for viewership.</p>
+
+        <p>What month would I release my content onto Netflix to ensure maximum viewership?</p>
+
+            <img src = "img/Netflix/nf_update_month_year.png">
+
+            <p> I would focus on any of the months with purple and magenta. The orange and yellow indicate high volume of content so viewership may go down for certain releases.</p>
+
+        <p>Film Rating Comparison</p>
+
+
+            <img src = "img/Netflix/film_ratings_comparison.png">
+
+            <p>Most of the content is rated TV-MA, TV-14 and TV-PG. We can deduce that Netflix's customer base are older adults. Programming rated TV-MA in the United States by the TV Parental Guidelines signifies content for mature audiences only. Programs with this rating are usually not suitable for anyone under 17 years of age (under 18 or 21 in some networks/services). Content may contain strong coarse language, explicit (in some cases, pornographic) strong sexual content, nudity, or intense/graphic violence.
+
+            Disney+ focuses on family-oriented entertainment and features no R and NC-17 rated films and TV-MA shows.</p>
+
+
+        <p>Intergration of IMDb dataset to find highest rated movies by platform</p>
+
+            <img src = "img/Netflix/nf_sunburst.png">
+            <img src = "img/Netflix/ds+_sunburst.png">
+
+        </div>
+
+
+
+
+
+
+        <footer class ="footer">
+            <a href ="mailto:alexclao89@gmail.com" class ="footer__link">alexclao89@gmail.com</a>
+            <ul class="social-list">
+                <li class = "social-list__item"><a class="social-list__link" href ="https://www.linkedin.com/in/alex-lao-17882182/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+                <li class = "social-list__item"><a class="social-list__link" href = "https://github.com/aclao89">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+                <li class = "social-list__item"><a class="social-list__link" href = "https://www.facebook.com/laolao89?ref=bookmarks">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+        </ul>
+
+    </footer>
+
+    <script src = "js/index.js"></script>
+
+    </body>
+</html>
