@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content= "width= device-width, initial-scale=1.0">
+        <title> Alex Lao Data Science Portfolio </title>
+        <link rel ="stylesheet"
+        href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel ="stylesheet"
+        href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity = "sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
+
+        <link href ="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+
+        <link  rel ="stylesheet" href ="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src ="" alt="">
+            </div>
+            <button class ="nav-toggle" aria-label="toggle navigation">
+                <span class ="hamburger"></span>
+            </button>
+            <nav class = "nav">
+                <ul class = "nav__list">
+                        <li class ="nav__item"><a href="index.html#home" class = "nav__link">Home</a></li>
+                        <li class ="nav__item"><a href="index.html#services" class = "nav__link">Skills</a></li>
+                        <li class ="nav__item"><a href="index.html#about" class = "nav__link">About me</a></li>
+                        <li class ="nav__item"><a href="index.html#work" class = "nav__link">My Projects</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <section class ="intro">
+            <h1 class = "section__title section__title--intro">
+                 NYC Airbnb: Exploratory Data Analysis
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Front-end dev</p>
+            <img src ="img/services.jpg" alt="Alex's headshot" class ="intro__img">
+        </section>
+
+
+        <div class ="portfolio-item-individual">
+        <p>Airbnb provides a platform for hosts to accommodate guests with short-term lodging and tourism-related activities.
+            Guests can search for lodging using filters such as lodging type, dates, location, and price.
+            Guests have the ability to search for specific types of homes, such as bed and breakfasts, unique homes, and vacation homes.
+            New York City has been one of the hottest markets for Airbnb. In the project, I performed an exploratory analysis of the Airbnb dataset to understand the rental landscape and consumer behavior with Airbnb listings in New York City.
+            </p>
+            <img src="img/airbnb/nyc_airbnb.jpg" alt="">
+
+        <p>Let's examine the amount of listings by the five boroughs. Which area do you think have the most? </p>
+            <img src = "img/airbnb/listingcntborough.png">
+
+            <p>Most of Airbnb listings in New York are near Brooklyn and Manhattan which is expected since it is a popular destination for attractions, restaurants, and business travel.</p>
+
+
+        <p>What's the distribution of room types by boroughs?</p>
+
+            <img src= "img/airbnb/roomtypebyborough.png">
+
+        <p>The bar plot shows that Entire Home/Apartment are listed most near Manhattan while Private Rooms and Entire Home/Apartments near Brooklyn have similar count of listings.
+        Given the density of New York City, space is already limited thus there are not a huge supply of 'shared rooms.'</p>
+
+
+        <p>90% of Listing Prices by Room Type</p>
+
+            <img src = "img/airbnb/entirehomeprice.png">
+
+            <img src = "img/airbnb/privateroomprice.png">
+
+            <img src = "img/airbnb/sharedroomprice.png">
+
+
+        <p>Entire home/apartments in Manhattan are most expensive, averaging nearly 400 (USD) per night. Staten Island, Queens, and Brooklyn lie between 250-275 (USD) per night. Bronx is the cheapest at 200 (USD) per night.
+            Private rooms in Brooklyn, Bronx, Staten Island, Queens cost around 100 (USD) per night. On the contrary, private rooms in Manhattan cost nearly 180 (USD) per night.
+            A shared room is cheapest in Brooklyn and Bronx. This graph shows that 90% of shared rooms cost nearly 80(USD) per night whereas Manhattan is the most expensive at nearly 150(USD) per night.
+        </p>
+
+
+        <p>Violin plot of price distribution</p>
+
+            <img src ="img/airbnb/rentalpricedistribution.png">
+
+        <p>Based on this violin chart, Manhattan has the widest distribution (wide range of prices) with $ 150 as average. Brooklyn has the second highest distribution. Queens and Staten Island have similar distributions and averages. Bronx is the cheapest of them all. This violin chart is logical since Manhattan is known as one of the most expensive places in the world to live in whereas Bronx has a lower standard of living costs.</p>
+
+        <p>Finding trend in listing descriptions</p>
+
+            <img src = "img/airbnb/wordcloudlistings.png">
+
+            <p>It shows that hosts are simply describing their listings in a short form with very specific terms for easier search by potential travelers. Word such as room, bedroom, cozy, apartment, studio, park, and private. Since Airbnb is used internationally, hosts need to use simple terms to describe the listing and area surrounding the it.</p>
+
+        </div>
+
+
+
+
+
+
+        <footer class ="footer">
+            <a href ="mailto:alexclao89@gmail.com" class ="footer__link">alexclao89@gmail.com</a>
+            <ul class="social-list">
+                <li class = "social-list__item"><a class="social-list__link" href ="https://www.linkedin.com/in/alex-lao-17882182/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+                <li class = "social-list__item"><a class="social-list__link" href = "https://github.com/aclao89">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+                <li class = "social-list__item"><a class="social-list__link" href = "https://www.facebook.com/laolao89?ref=bookmarks">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+        </ul>
+
+    </footer>
+
+    <script src = "js/index.js"></script>
+
+    </body>
+</html>
