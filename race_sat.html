@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content= "width= device-width, initial-scale=1.0">
+        <title> Alex Lao Data Science Portfolio </title>
+        <link rel ="stylesheet"
+        href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel ="stylesheet"
+        href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity = "sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
+
+        <link href ="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+
+        <link  rel ="stylesheet" href ="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src ="" alt="">
+            </div>
+            <button class ="nav-toggle" aria-label="toggle navigation">
+                <span class ="hamburger"></span>
+            </button>
+            <nav class = "nav">
+                <ul class = "nav__list">
+                        <li class ="nav__item"><a href="index.html#home" class = "nav__link">Home</a></li>
+                        <li class ="nav__item"><a href="index.html#services" class = "nav__link">Skills</a></li>
+                        <li class ="nav__item"><a href="index.html#about" class = "nav__link">About me</a></li>
+                        <li class ="nav__item"><a href="index.html#work" class = "nav__link">My Projects</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <section class ="intro">
+            <h1 class = "section__title section__title--intro">
+                 Academic success in high schools: What factors influence differences in SAT performance across New York City?
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Front-end dev</p>
+            <img src ="img/services.jpg" alt="Alex's headshot" class ="intro__img">
+        </section>
+
+
+        <div class ="portfolio-item-individual">
+        <h1>Purpose</h1>
+        <p>The SAT is a standardized test widely used for college admissions in the United States. The goal of this project was to identify any unintended patterns that would put certain groups at an disadvantage. This is an important step in making the US education system more equal for all. According the US Department of Education website, the challenge of ensuring educational equity is formidable.
+            In hopes to be more informed on this matter, I would like to know:
+        <ol class ="questions">
+            <li> What factors influence differences in SAT scores and opportunities to attend certain colleges/universities?</li>
+            <li> Factoring in housing prices, where can one get the best high school education in New York City?</li>
+            <li> Using NYPD Crime Data, can we find any overlaps of high crime in poor performing schools?ataset to understand the rental landscape and consumer behavior with Airbnb listings in New York City.</li>
+            </ol>
+        </p>
+            <img src="img/SAT/nyc_school.jfif" alt="">
+        <h3>Methods</h3>
+        <p>This analysis used descriptive statistics and data visualizations to explore the following datasets on New York City high schools. Please check the GitHub repo for data links.
+        <ol>
+            <li>SAT scores for all NYC high schools in 2011-2012</li>
+            <li>School attendance information - Attendance information for each school in New York City</li>
+            <li>Class size - Information on class size for each school</li>
+            <li>Advanced Placement - Advanced Placement (AP) exam results for each high school (passing an optional AP exam in a particular subject can earn a student college credit in that subject)</li>
+            <li>Demographic information - Demographic information for each school</li>
+            <li>Graduation outcome - The percentage of students who graduated, and other outcome information</li>
+            <li>School surveys - Surveys of parents, teachers, and students at each school</li>
+            <li>NYC Housing Data -Department of Finance (DOF) maintains records for all property sales in New York City, including sales of family homes in each borough. This list is a summary of neighborhood sales for Tax Class 1, 2 and 3 Family homes</li>
+            <li>NYC Crime Data - Dataset includes all valid felony, misdemeanor, and violation crimes reported to the New York City Police Department (NYPD) from 2006 to the end of last year (2017)</li>
+            <li>The extract, transform, and load (ETL) portion was done as part of dataquests instructions and methodology.</li></p>
+        </ol>
+
+        <h3>Notebooks Used</h3>
+        <ul>
+            <li>Schools.ipynb - This notebook examined the data source from 1 to 8. The goal was to identify any unintended patterns that would put certain groups at an disadvantage</li>
+            <li>NYPD Crime 2001.ipynb - This notebook analyzed the crime rates and cross referenced the heat map with the schools with low safety/respect scores. This serves as a confirmation of unsafe neighborhoods which influences academic performance.</li>
+
+        </ul>
+
+        <h1>Data Analysis</h1>
+
+            <iframe src= ></iframe>
+
+            <img src= "img/SAT/saf_sat_corr.jpg">
+
+        <p>There appears to be a correlation between SAT scores and safety, although it isn't that strong. It looks like there are a few schools with extremely high SAT scores and high safety scores. There are a few schools with low safety scores and low SAT scores. No school with a safety score lower than 6.5 has an average SAT score higher than 1500 or so. Unsafe environments could negatively influence good SAT performance.</p>
+
+
+
+            <img src = "img/SAT/survey_sat.jpg">
+
+
+        <ul>
+
+        <li>Safety and Respect (saf_s_11 ~0.34) and student academic expectations (aca_s_11 ~0.34) have a moderate correlation with good SAT scores.</li>
+        <li>It's also important to note the teachers' safety and respect score (saf_t_11 ~ 0.29) is relevant with good SAT scores.</li>
+        <li>Overall, it makes sense when students and teachers feel safe and have trusting relationships, they can focus on providing a positive environment to achieve better academic results.</li>
+
+        </ul>
+
+
+        <img src ="img/SAT/race_sat.jpg">
+
+        <ul>
+            <li>White and Asian students have a significant positive correlations with SAT scores, whereas Black and Hispanic students have negative correlations with Hispanics being at a slightly higher disadvantage.</li>
+            <li>This trends in the NYC dataset are in agreement with the achievement gaps among groups of students in the same time period (2011). https://nces.ed.gov/nationsreportcard/studies/gaps/ </li>
+        </ul>
+
+        <embed type="text/html" src="img/SAT/hispanic_sat.html"  width="1000" height="500">
+
+        <ol>
+            <li>Schools with low average SAT scores and high percentages of Hispanic students are often named "International". These schools specialize on students with limited English skills thus these schools tend to score below average because the SAT tests both reading and writing.</li>
+
+            <li>Schools with high average SAT scores and low percentages of Hispanics are highly selective ('technical') public schools with prestigious reputations.</li>
+
+            <li>Here's a list of schools from each borough with avg SAT > 1800:</li>
+
+            <ul>
+                <li>Manhattan - Stuyvesant High School, Bard High School Early College</li>
+                <li>Bronx - Bronx High School and High School of American Studies at Lehman College</li>
+                <li>Brooklyn - Brooklyn Technical School</li>
+                <li>Queens - Queens High School for the Sciences at York College and Townsend Harris High School Staten Island</li>
+                <li>Staten Island Technical High School</li>
+            </ul>
+            <li>This brings up another question of interest. Out of these high-performing schools (avg. SAT > 1800), what are the demographics?</li>
+
+        </ol>
+
+
+
+        <embed type="text/html" src="img/SAT/demographic_high_sat.html" width="1000" height="500">
+
+            <p>Blacks and Hispanics are underrepresented in 'Elite Schools' whereas Asians and Whites are overrepresented. This could be attributed to certain groups having access to more resources.</p>
+
+        <img src= "img/SAT/race_sat.jpg">
+
+            <p>In the plot above, we can see that females have a positive correlation with SAT scores, whereas males have a negative correlation. However, neither correlation is extremely strong.</p>
+
+
+
+        <embed type="text/html" src="img/SAT/female_sat.html" width="1000" height="500">
+
+        <p>I took a closer look at the schools with above average SAT scores (1400).</p>
+
+        <ul>
+                    <li>BARD HIGH SCHOOL EARLY COLLEGE</li>
+          <li>PROFESSIONAL PERFORMING ARTS HIGH SCHOOL</li>
+                     <li>ELEANOR ROOSEVELT HIGH SCHOOL</li>
+                            <li>MILLENNIUM HIGH SCHOOL</li>
+                      <li>TALENT UNLIMITED HIGH SCHOOL</li>
+                                <li>BEACON HIGH SCHOOL</li>
+ <li>FIORELLO H. LAGUARDIA HIGH SCHOOL OF MUSIC & ARTS</li>
+                 <li>BARD HIGH SCHOOL EARLY COLLEGE II</li>
+                       <li>TOWNSEND HARRIS HIGH SCHOOL</li>
+<li>QUEENS GATEWAY TO HEALTH SCIENCES SECONDARY SCHOOL</li>
+      <li>FRANK SINATRA SCHOOL OF THE ARTS HIGH SCHOOL</li>
+  </ul>
+        <ol>
+            <li>These schools appears to be very selective liberal arts schools that have high academic standards.</li>
+            <li>Only Manhattan and Queens high schools have > 60% female and scored above 1400.</li>
+            <li>Females in the remaining boroughs may have limited access to good education. If we reduced female % to 50 and kept > 1400 SAT Scores, it would only return 4 more schools in Brooklyn.</li>
+            <li>More than 50% of schools in Brooklyn and Bronx fall under the average SAT score (~1200).</li>
+        </ol>
+
+        <embed type="text/html" src="img/SAT/male_sat.html" width="1000" height="500">
+    <ul>
+            <li>There was only one high school in all of the boroughs that had > 60% males and scored above 1400: High School for Mathematics, Science, and Engineering at City College in Manhattan.</li>
+            <li>Similar to the female vs avg. SAT score plot, more than 50% of schools in Bronx and Brooklyn fall below the average SAT (~1200).</li>
+    </ul>
+
+        <embed type="text/html" src="img/SAT/ap_sat.html" width="1000" height="500">
+
+        <p>Advanced Placement (AP) is a program in the United States and Canada created by the College Board which offers college-level curricula and examinations to high school students. American colleges and universities may grant placement and course credit to students who obtain high scores on the examinations.</p>
+    <ul>
+        <li>With SAT above 1400, there is a linear correlation between the AP Takers % and SAT scores. Upon more research, the school had high enrollments standards. Thus, students with higher academia would benefit more from these AP classes than other school.</li>
+        <li>It's suprising to see schools with high shares of AP takers exhibited near or equal the average SAT score. This draws another questions to why these schools exhibit such poor SAT scores given the high share of AP takers. We can use the Z-Score to determine which factors attribute more. The Z-Score represents, for a given value x of your numerical variable distribution, “how many standard deviations” it is from your variable mean. If Z-Score is positive, then your x value is above the mean. On the other hand, if your Z-Score is negative, then your x value is below that mean.</li>
+        <li>Otherwise, a high share of AP takers does not indicate a strong SAT score.</li>
+    </ul>
+
+        <embed type="text/html" src="img/SAT/ap_courses.html" width="1000" height="500">
+
+        <p>Schools with high share of AP takers and low SATs offer a limited selection of courses. They mainly focus on history and literature; surprisingly English literature and composition is highly enrolled.</p>
+
+    <h2>NYC Housing: Jamaica and Sheepshead Bay both offer good public education and have lower property costs</h2>
+
+    <p>Aim of this section: identify "affordable" neighborhoods with good schools.
+        To make this analysis, we need to add the following information to our dataset:
+    <ul>
+        <li>property prices by neighborhood</li>
+        <li>neighborhood of schools (which requires reverse geocoding the available coordinates)</li>
+    </ul>
+
+    <img src="img/SAT/home_type_sales.jpg">
+
+
+    <p>I will use one family houses, because they are the most common types of properties sold. They probably also have the most real life relevance when a family considers moving.</p>
+
+
+    <embed type="text/html" src="img/SAT/property_sat.html" width="1000" height="500">
+
+    <ul>
+        <li>Jamaica and Sheepshead Bay have safety/respect scores of 7.4 and 7.9 with above average SAT scores in area under $1 million for a single family house.</li>
+        <li>Woodhaven, Woodlawn, Flat-Bush Central, and Cambria Heights scored below 7.0 on safety/respect and more expensive than Jamaica and Sheepshead Bay.</li>
+        <li>Staten Island Technical High School in Oakwood Heights is the best pick in terms of housing price and superb average SAT performance. The housing price in Oakwood Heights are similar to Jamaica but Oakwood has a 300 point advantage on SAT.</li>
+    </ul>
+        </div>
+
+
+
+
+
+
+        <footer class ="footer">
+            <a href ="mailto:alexclao89@gmail.com" class ="footer__link">alexclao89@gmail.com</a>
+            <ul class="social-list">
+                <li class = "social-list__item"><a class="social-list__link" href ="https://www.linkedin.com/in/alex-lao-17882182/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+                <li class = "social-list__item"><a class="social-list__link" href = "https://github.com/aclao89">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+                <li class = "social-list__item"><a class="social-list__link" href = "https://www.facebook.com/laolao89?ref=bookmarks">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+        </ul>
+
+    </footer>
+
+    <script src = "js/index.js"></script>
+
+    </body>
+</html>
