@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content= "width= device-width, initial-scale=1.0">
+        <title> Alex Lao Data Science Portfolio </title>
+        <link rel ="stylesheet"
+        href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel ="stylesheet"
+        href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity = "sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
+
+        <link href ="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+
+        <link  rel ="stylesheet" href ="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src ="" alt="">
+            </div>
+            <button class ="nav-toggle" aria-label="toggle navigation">
+                <span class ="hamburger"></span>
+            </button>
+            <nav class = "nav">
+                <ul class = "nav__list">
+                        <li class ="nav__item"><a href="index.html#home" class = "nav__link">Home</a></li>
+                        <li class ="nav__item"><a href="index.html#services" class = "nav__link">Skills</a></li>
+                        <li class ="nav__item"><a href="index.html#about" class = "nav__link">About me</a></li>
+                        <li class ="nav__item"><a href="index.html#work" class = "nav__link">My Projects</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <section class ="intro">
+            <h1 class = "section__title section__title--intro">
+                 Police Shootings from 2015 to 2020: Exploratory Data Analysis and visualizations
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Front-end dev</p>
+            <img src ="img/services.jpg" alt="Alex's headshot" class ="intro__img">
+        </section>
+
+
+        <div class ="portfolio-item-individual">
+
+            <img src="img/Police/readme_cover.jpg" alt="">
+
+            <h2>ABSTRACT</h2>
+            <p>
+            In 2015, The Washington Post began tracking more than a dozen details about each killing — including the race of the deceased, the circumstances of the shooting, whether the person was armed and whether the victim was experiencing a mental-health crisis — by pulling local news reports, law enforcement websites and social media and by monitoring independent databases such as Killed by Police and Fatal Encounters.
+            The Post is documenting only those shootings in which a police officer, in the line of duty, shot and killed a civilian — the circumstances that most closely parallel the 2014 killing of Michael Brown in Ferguson, Missouri, which began the protest movement culminating in Black Lives Matter and an increased focus on police accountability nationwide. The Post is not tracking deaths of people in police custody, fatal shootings by off-duty officers or non-shooting deaths.
+            </p>
+
+            <p>The FBI and the Centers for Disease Control and Prevention log fatal shootings by police, but officials acknowledge that their data is incomplete. In 2015, The Post documented more than two times more fatal shootings by police than had been recorded by the FBI. According the Las Vegas Review-Journal: Deadly Force, "The nation’s leading law enforcement agency [FBI] collects vast amounts of information on crime nationwide, but missing from this clearinghouse are statistics on where, how often, and under what circumstances police use deadly force. In fact, no one anywhere comprehensively tracks the most significant act police can do in the line of duty: take a life."
+
+            In hopes to be more informed on this matter, I would like to investigate:
+
+        <ul>
+            <li>Due to the current climate around Black Lives Matter, are African-Americans shot a higher rate?</li>
+            <li>What are the type of weapons in possession of the victim? Does it differ among racial groups?</li>
+            <li>What are the differences, if any, in age group among the racial groups?</li>
+            <li>Identify any trends in shooting on a monthly and yearly basis.</li>
+            <li>Due to the rise in police brutality claims and proven videos, have police departments increased body camera footage to ensure accountability on tactics?</li>
+        </ul>
+            </p>
+
+            <h2>METHODS</h2>
+            <br></br>
+            <h3>Datasets</h3>
+
+            <ul>
+                <li>Police Killing- a database maintained by the Washington Post</li>
+                <li>State Demographic Population- US Census data regarding racial demographic on US total population</li>
+                <li>Race Population by City- US Census data regarding racial demographic in all US cities</li>
+                <li>Below Poverty Level- US Census data regarding percentage of people under the poverty level</li>
+            </ul>
+
+            <h3>Libraries for analysis and visualizations</h3>
+            <ul>
+                <li>Plotly - Python graphic library for interactive charts and maps</li>
+                <li>Matplotlib - A comprehensive library for creating static, animated, and interactive visualizations in Python</li>
+                <li>Folium - Python library that helps you create several types of Leaflet maps</li>
+                <li>Pandas - An open source data analysis and manipulation tool, built on top of the Python programming language</li>
+            </ul>
+
+
+
+            <h2>Data Cleaning</h2>
+            <br></br>
+
+            <img src= "img/Police/missinginfo.jpg">
+
+        <p> Given the current climate on police brutality, it's concerning that race has the most null values. This further compounds the fact law enforcement agencies are purposely hiding race to deflate actual data trends.
+            Since each column with null values is less than 10% then we can continue with dropping those rows since it wont significantly impact the analysis.</p>
+
+
+        <p>For more detailed cleaning, please view my Jupyter notebook in my Github repo. https://github.com/aclao89/Police_Shootings</p>
+            <br></br>
+
+            <h2>Data Analysis</h2>
+
+            <h4>Yearly victims in police shootings</h4>
+
+            <img src = "img/Police/yearly_count.png">
+
+
+        <p>This graph shows that the rate of killing per year has never looked down except 2016. It has an average of 983 per year. Almost 1000 people are killed every year. We are in mid of 2020 and we have already reached 432 death counts as of now. Will this year also be the same story as before?</p>
+
+
+            <h4>Cumulative deaths per month from 2015 to 2020</h4>
+
+            <img src ="img/Police/deaths_per_month.jpg">
+
+        <p>January, February and March have recorded most cases, averaging well over 400 per month. That is approximately 13 deaths every day! :(</p>
+
+          <h4>Calendar Heat Map to see the distribution of shootings over the span from 2015 to 2020</h4>
+
+            <img src = "img/Police/calheatmap.jpg">
+
+
+
+         <h4>Body Cameras</h4>
+
+            <img src = "img/Police/body_cameras.png">
+
+            <p>Due to the 2014 slaying of Michael Brown, the Department of Justice launched a campaign to increase police accountability through body cameras. However, the data tells a different story; more than 85% of cases per year had no body cameras to documentation and accountability. This needs immediate change since law enforcement are suppose to serve and protect while providing transparency around its actions and tactics. The lack of body cameras is astounding and provides the need of police accountability and restructuring to ensure transparency. If the police is abiding by trained tactics and conduct, then they should have nothing to hide from a body camera.
+            In 2014, researchers at Arizona State University (funded through the Bureau of Justice Assistance’s Smart Policing Initiative) found that officers with body-worn cameras were more productive in terms of making arrests, had fewer complaints lodged against them relative to officers without body-worn cameras, and had higher numbers of citizen complaints resolved in their favor</p>
+
+
+        <h4>Manner of death</h4>
+            <img src = "img/Police/pie_shot_taser.png">
+            <p>According to this policy, the primary purpose for employing the Taser is to protect human lives and prevent injury to officers and citizens. Since it's less lethal, we can assume that a taser was deployed as a first sign of warning toward the aggressor. Only 5% of cases had a taser deployed then subsequently shot. On the contrary, 95% of cases were just shot.
+                This calls into question on police tactics and funding. This metric can be used to formulate mandatory tactical self-defense skill as a less-lethal approach to subdue/deescalate situations to reduce deaths.</p>
+
+
+        <h4>Manner of death by race</h4>
+
+        <img src='img/Police/shot_taser.jpg'>
+
+
+        <p>No significant difference among the racial groups. Since only 5% were tasered and shot, it seems evenly distributed amongst the groups.</p>
+
+        <h4>Weapon by race</h4>
+
+        <img src='img/Police/weapon_by_race.jpg'>
+
+        <p>Obviously, a gun is a commonly used weapon and also considered an immediate threat to law enforcement. However, unarmed African Americans are shot at a higher rate than any other race.
+             One might argue that unarmed does not equate to less threat which is true. This call into question regarding police accurately assessing threat levels and tactics to subdue the perp instead of killing.</p>
+
+
+        <h4>Deaths of each race</h4>
+
+        <img src='img/Police/race_deaths.png'>
+
+        <ul>
+            <li>Percent of Whites Killed: 52%</li>
+            <li>Percent of Blacks Killed: 26%</li>
+            <li>Percent of Asians Killed: 2%</li>
+            <li>Percent of Hispanics Killed: 18%</li>
+            <li>Percent of Native Americans Killed: 2%</li>
+        </ul>
+
+        <h4>Population by Race</h4>
+
+        <img src= 'img/Police/us_demo_pop.png'>
+
+
+        <p>At first glance, Whites were shot at an astonishing rate of 51%. However, this should be taken with a grain of salt since White Americans comprise two-thirds of the US total population.
+             African Americans, however, account for 26% of those fatally shot and killed by the police despite being just 12% of the U.S. population.</p>
+
+        <h4>Poverty of each state</h4>
+
+        <img src ='img/Police/poverty_state.jpg'>
+
+
+        <p>Twenty five of the population of Mississippi and Arizona are below the poverty rate.</p>
+
+
+        <h4>Demographic percentage of each state</h4>
+
+        <img src='img/Police/demographic_state.jpg'>
+
+        <p>Mississippi has the second highest African American population behind Washington DC.
+            Crime and poverty are often correlated; One way poverty causes crime is the way most people think of it: Some people in desperate need of money commit crimes.</p>
+
+
+        <h4>African Americans killed by the police: Age, frequency, and map</h4>
+
+        <img src ='img/Police/blacks_shot.png'>
+
+        <ul>
+        <li>California, Texas and Florida has recorded most African Americans.</li>
+
+        <li>There are more darker side on East side of US too. Perhaps those East Coast States have a higher African American population.</li>
+
+        <li>Annually, the police kill an average of 212 African Americans every year.</li>
+
+        <li>Sadly, there are 109 minors (10-19) who have been victims.</li>
+
+        <li>Montana, Wyoming, and North/South Dakotas were the only states with no reported deaths.</li>
+
+        <li>Most of the victims were between 20-40 years old. It seems younger African Americans are targeted compared to the average age of Caucasians (30-50 years old).</li>
+    </ul>
+
+
+        <h4>Caucasians killed by the police: Age, frequency, and map</h4>
+
+        <img src='img/Police/white_shot.png'>
+        <ul>
+            <li>Since White American comprise nearly 66% of the US total population, they have a higher chance of being shot due to the sheer difference in population.</li>
+            <li>California, Texas, and Florida have higher rates, possibly due to the size and density of each state.</li>
+            <li>Most victims were between 30-50 years old.</li>
+        </ul>
+
+        </div>
+
+
+
+
+
+
+        <footer class ="footer">
+            <a href ="mailto:alexclao89@gmail.com" class ="footer__link">alexclao89@gmail.com</a>
+            <ul class="social-list">
+                <li class = "social-list__item"><a class="social-list__link" href ="https://www.linkedin.com/in/alex-lao-17882182/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+                <li class = "social-list__item"><a class="social-list__link" href = "https://github.com/aclao89">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+                <li class = "social-list__item"><a class="social-list__link" href = "https://www.facebook.com/laolao89?ref=bookmarks">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+        </ul>
+
+    </footer>
+
+    <script src = "js/index.js"></script>
+
+    </body>
+</html>
