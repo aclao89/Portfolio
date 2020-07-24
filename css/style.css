@@ -5,8 +5,8 @@
 }
 
 :root {
-    --ff-primary: 'Lora', serif;
-    --ff-secondary: 'Roboto Slab', serif;
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
 
     --fw-reg: 400;
     --fw-bold: 700;
