@@ -37,60 +37,119 @@
             <h1 class = "section__title section__title--intro">
                  NYC Airbnb: Exploratory Data Analysis
             </h1>
-            <p class="section__subtitle section__subtitle--intro">Front-end dev</p>
+            <p class="section__subtitle section__subtitle--intro">Data Analyst</p>
             <img src ="img/airbnb.jpg" alt="Alex's headshot" class ="intro__img">
         </section>
-        <h2>ABSTRACT</h2>
+        <h2 class ="section__title section__title--services">ABSTRACT</h2>
 
         <div class ="portfolio-item-individual">
         <p>Airbnb provides a platform for hosts to accommodate guests with short-term lodging and tourism-related activities.
             Guests can search for lodging using filters such as lodging type, dates, location, and price.
-            Guests have the ability to search for specific types of homes, such as bed and breakfasts, unique homes, and vacation homes.
-            New York City has been one of the hottest markets for Airbnb. In the project, I performed an exploratory analysis of the Airbnb dataset to understand the rental landscape and consumer behavior with Airbnb listings in New York City.
+            Guests have the ability to search for specific types of homes, such as bed and breakfasts, unique homes, and vacation homes. This dataset describes the listing activity and metrics in New York City, NY for 2019.
             </p>
+        <p>In the project, I performed an exploratory analysis of the Airbnb dataset to understand the rental landscape and consumer behavior with Airbnb listings in New York City.</p>
 
-        <h2>Data Analysis</h2>
-        <p>Let's examine the amount of listings by the five boroughs. Which area do you think have the most? </p>
-            <img src = "img/airbnb/listingcntborough.png">
+        <h4>Inspiration:</h4>
+        <ul>
+            <li>What can we learn about different hosts and areas?</li>
+            <li>What can we learn from predictions? (ex: locations, prices, reviews, etc)</li>
+            <li>Which hosts are the busiest and why?</li>
+        </ul>
 
-            <p>Most of Airbnb listings in New York are near Brooklyn and Manhattan which is expected since it is a popular destination for attractions, restaurants, and business travel.</p>
+            <h2 class ="section__title section__title--services">METHODS</h2>
 
+        <h4>Tools & Libraries used:</h4>
+        <ul>
+            <li>Jupyter Notebook</li>
+            <li>Pandas</li>
+            <li>Matplotlib</li>
+            <li>Seaborn</li>
+            <li>Folium</li>
+            <li>Numpy</li>
 
-        <p>What's the distribution of room types by boroughs?</p>
+        </ul>
+
+        <h4>Data Cleaning:</h4>
+        <ul>
+            <li>Removing redundent/irrelevant columns</li>
+            <li>Cleaning individual columns</li>
+            <li>Replace columns with NaN values with average or zeros to maintain data integrity</li>
+
+        </ul>
+
+            <h2 class ="section__title section__title--services">Data Analysis</h2>
+
+        <img src = "img/airbnb/top10hostlistings.png">
+        <ul>
+        <li>Interesting, we can see that there is a good distribution between top 10 hosts with the most listings. First host has more than 300+ listings.</li>
+    </ul>
+            <img src = "img/airbnb/subplots.png">
+        <ul>
+            <li>Most of Airbnb listings in New York are near Brooklyn and Manhattan which is expected since it is a popular destination for attractions, restaurants, and business travel.</li>
+            <li>Brooklyn and Manhattan are more densely populated compared to the other boroughs. </li>
+
+        </ul>
 
             <img src= "img/airbnb/roomtypebyborough.png">
+        <ul>
+        <li>The bar plot shows that Entire Home/Apartment are listed most near Manhattan while Private Rooms and Entire Home/Apartments near Brooklyn have similar count of listings.
+        Given the density of New York City, space is already limited thus there are not a huge supply of 'shared rooms.</li>
+    </ul>
+            <img src ="img/airbnb/catplot.png">
 
-        <p>The bar plot shows that Entire Home/Apartment are listed most near Manhattan while Private Rooms and Entire Home/Apartments near Brooklyn have similar count of listings.
-        Given the density of New York City, space is already limited thus there are not a huge supply of 'shared rooms.'</p>
+
+        <ul>
+            <li>The observation that is definitely contrasted the most is that 'Shared room' type Airbnb listing is barely available among 10 most listing-populated neighborhoods.</li>
+            <li>Out of these 10 neighborhoods only 2 boroughs are represented: Manhattan and Brooklyn; that was somewhat expected as Manhattan and Brooklyn are one of the most traveled destinations, therefore would have the most listing availability. </li>
+            <li>We can also observe that Bedford-Stuyvesant and Williamsburg are the most popular for Brooklyn borough, and Harlem for Manhattan.</li>
+
+        </ul>
 
 
-        <p>90% of Listing Prices by Room Type</p>
+        <img src ="img/airbnb/popneighsubplots.png">
+
+        <ul>
+            <li>The subplot shows the top ten neighborhoods by number of room listings.</li>
+            <li>Bedford-Stuyvesant, Williamsburg, and Harlem have the most listings due to their location and popularity.</li>
+            
+        </ul>
 
             <img src = "img/airbnb/entirehomeprice.png">
-
+            <ul>
+                <li>Entire home/apartments in Manhattan are most expensive, averaging nearly $400 per night.</li>
+                <li>Staten Island, Queens, and Brooklyn lie between $250-275 per night. Bronx is the cheapest at $200 per night.</li>
+            </ul>
             <img src = "img/airbnb/privateroomprice.png">
-
+            <ul>
+                <li>Private rooms in Brooklyn, Bronx, Staten Island, Queens cost around $100 per night.</li>
+                <li>On the contrary, private rooms in Manhattan cost nearly $180 per night.</li>
+            </ul>
             <img src = "img/airbnb/sharedroomprice.png">
+            <ul>
+                <li>A shared room is cheapest in Brooklyn and Bronx, approximately $80. As expected, Manhattan is the most expensive at nearly $150 per night.
 
-
-        <p>Entire home/apartments in Manhattan are most expensive, averaging nearly 400 (USD) per night. Staten Island, Queens, and Brooklyn lie between 250-275 (USD) per night. Bronx is the cheapest at 200 (USD) per night.
-            Private rooms in Brooklyn, Bronx, Staten Island, Queens cost around 100 (USD) per night. On the contrary, private rooms in Manhattan cost nearly 180 (USD) per night.
-            A shared room is cheapest in Brooklyn and Bronx. This graph shows that 90% of shared rooms cost nearly 80(USD) per night whereas Manhattan is the most expensive at nearly 150(USD) per night.
-        </p>
-
-
-        <p>Violin plot of price distribution</p>
+            </ul>
 
             <img src ="img/airbnb/rentalpricedistribution.png">
 
-        <p>Based on this violin chart, Manhattan has the widest distribution (wide range of prices) with $ 150 as average. Brooklyn has the second highest distribution. Queens and Staten Island have similar distributions and averages. Bronx is the cheapest of them all. This violin chart is logical since Manhattan is known as one of the most expensive places in the world to live in whereas Bronx has a lower standard of living costs.</p>
 
-        <p>Finding trend in listing descriptions</p>
+        <ul>
+            <li>Based on this violin chart, Manhattan has the widest distribution (wide range of prices) with $ 150 as average.</li>
+            <li>Brooklyn has the second highest distribution.</li>
+            <li>Queens and Staten Island have similar distributions and averages. Bronx is the cheapest of them all.</li>
+            <li> This violin chart is logical since Manhattan is known as one of the most expensive places in the world to live in whereas Bronx has a lower standard of living costs.</li>
+
+        </ul>
+
 
             <img src = "img/airbnb/wordcloudlistings.png">
 
-            <p>It shows that hosts are simply describing their listings in a short form with very specific terms for easier search by potential travelers. Word such as room, bedroom, cozy, apartment, studio, park, and private. Since Airbnb is used internationally, hosts need to use simple terms to describe the listing and area surrounding the it.</p>
 
+            <ul>
+                <li>It shows that hosts are simply describing their listings in a short form with very specific terms for easier search by potential travelers.</li>
+                <li>Word such as room, bedroom, cozy, apartment, studio, park, and private. Since Airbnb is used internationally, hosts need to use simple terms to describe the listing and area surrounding the it.</li>
+
+            </ul>
         </div>
 
 
