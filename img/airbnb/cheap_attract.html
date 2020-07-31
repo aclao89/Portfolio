@@ -1,0 +1,2161 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fbb9951bb5374aceb7eb06938f16234a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_fbb9951bb5374aceb7eb06938f16234a" ></div>
+        
+</body>
+<script>    
+    
+            var map_fbb9951bb5374aceb7eb06938f16234a = L.map(
+                "map_fbb9951bb5374aceb7eb06938f16234a",
+                {
+                    center: [40.7289488806627, -73.9521696146839],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_52affda7653d4cf69c007ae2b642ce51 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var marker_2f3d3cf468d84ee793545bc5090285d1 = L.marker(
+                [40.6673, -73.76831],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_77fa5ef4cf4a42f2a368fe80add92a95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2f3d3cf468d84ee793545bc5090285d1.setIcon(icon_77fa5ef4cf4a42f2a368fe80add92a95);
+        
+    
+        var popup_0692335566234d0f8a40813c99d5a91d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7019e6bef94f41f0a6eded76804185dd = $(`<div id="html_7019e6bef94f41f0a6eded76804185dd" style="width: 100.0%; height: 100.0%;">['Room near JFK Queen Bed', '\n $47 per night,\n629 Reviews,\nRoom Type: Private room']</div>`)[0];
+            popup_0692335566234d0f8a40813c99d5a91d.setContent(html_7019e6bef94f41f0a6eded76804185dd);
+        
+
+        marker_2f3d3cf468d84ee793545bc5090285d1.bindPopup(popup_0692335566234d0f8a40813c99d5a91d)
+        ;
+
+        
+    
+    
+            var marker_99c2cc90667246c2ba54a9eb9f359015 = L.marker(
+                [40.82085, -73.94025],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_5b3742f45dc34ccd94168fd4e7e627e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_99c2cc90667246c2ba54a9eb9f359015.setIcon(icon_5b3742f45dc34ccd94168fd4e7e627e9);
+        
+    
+        var popup_4ad911873c49488b8f7fddc09f256cb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ede7af7fdbbd4f098e8581c0961508ce = $(`<div id="html_ede7af7fdbbd4f098e8581c0961508ce" style="width: 100.0%; height: 100.0%;">['Great Bedroom in Manhattan', '\n $49 per night,\n607 Reviews,\nRoom Type: Private room']</div>`)[0];
+            popup_4ad911873c49488b8f7fddc09f256cb8.setContent(html_ede7af7fdbbd4f098e8581c0961508ce);
+        
+
+        marker_99c2cc90667246c2ba54a9eb9f359015.bindPopup(popup_4ad911873c49488b8f7fddc09f256cb8)
+        ;
+
+        
+    
+    
+            var marker_7b1ae32b68a84e0ca6278ff8136818c1 = L.marker(
+                [40.82124, -73.93838000000001],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_f580ad4360b34cdbb3a4ed37d6af8f17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7b1ae32b68a84e0ca6278ff8136818c1.setIcon(icon_f580ad4360b34cdbb3a4ed37d6af8f17);
+        
+    
+        var popup_7deedcb93bdd49b590126616a97df53c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_412b03c9fbae4f10b88e4e8a8b1be044 = $(`<div id="html_412b03c9fbae4f10b88e4e8a8b1be044" style="width: 100.0%; height: 100.0%;">['Beautiful Bedroom in Manhattan', '\n $49 per night,\n597 Reviews,\nRoom Type: Private room']</div>`)[0];
+            popup_7deedcb93bdd49b590126616a97df53c.setContent(html_412b03c9fbae4f10b88e4e8a8b1be044);
+        
+
+        marker_7b1ae32b68a84e0ca6278ff8136818c1.bindPopup(popup_7deedcb93bdd49b590126616a97df53c)
+        ;
+
+        
+    
+    
+            var marker_f3695796e88348b99b66625268e1793f = L.marker(
+                [40.82264, -73.94041],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_6b7900c615ec453488177c935da1faae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f3695796e88348b99b66625268e1793f.setIcon(icon_6b7900c615ec453488177c935da1faae);
+        
+    
+        var popup_cce81e3910a9495dae7e794c66bde552 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7bc048df4194f4aa319ddf54f93e9fb = $(`<div id="html_d7bc048df4194f4aa319ddf54f93e9fb" style="width: 100.0%; height: 100.0%;">['Private Bedroom in Manhattan', '\n $49 per night,\n594 Reviews,\nRoom Type: Private room']</div>`)[0];
+            popup_cce81e3910a9495dae7e794c66bde552.setContent(html_d7bc048df4194f4aa319ddf54f93e9fb);
+        
+
+        marker_f3695796e88348b99b66625268e1793f.bindPopup(popup_cce81e3910a9495dae7e794c66bde552)
+        ;
+
+        
+    
+    
+            var marker_57dc33c4496e4f578a2d2c14e1d78ae9 = L.marker(
+                [40.66939, -73.76975],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_cbc27a2b3be540f69739d11d183ac65a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_57dc33c4496e4f578a2d2c14e1d78ae9.setIcon(icon_cbc27a2b3be540f69739d11d183ac65a);
+        
+    
+        var popup_766242b8c3604873a3506955f522f4a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c731ade84e84dd5900bfe26dbed0e19 = $(`<div id="html_0c731ade84e84dd5900bfe26dbed0e19" style="width: 100.0%; height: 100.0%;">['Room Near JFK Twin Beds', '\n $47 per night,\n576 Reviews,\nRoom Type: Private room']</div>`)[0];
+            popup_766242b8c3604873a3506955f522f4a2.setContent(html_0c731ade84e84dd5900bfe26dbed0e19);
+        
+
+        marker_57dc33c4496e4f578a2d2c14e1d78ae9.bindPopup(popup_766242b8c3604873a3506955f522f4a2)
+        ;
+
+        
+    
+    
+            var marker_e607cf2d5468465eaee38500d53125c4 = L.marker(
+                [40.77006, -73.87683],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_17495d26487243279a9b9eb56ba58886 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e607cf2d5468465eaee38500d53125c4.setIcon(icon_17495d26487243279a9b9eb56ba58886);
+        
+    
+        var popup_d124fc25a52b4e1b8ded8046d3b46de6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e85fdc45615f4c629ae7b950d9e3be2c = $(`<div id="html_e85fdc45615f4c629ae7b950d9e3be2c" style="width: 100.0%; height: 100.0%;">['Steps away from Laguardia airport', '\n $46 per night,\n543 Reviews,\nRoom Type: Private room']</div>`)[0];
+            popup_d124fc25a52b4e1b8ded8046d3b46de6.setContent(html_e85fdc45615f4c629ae7b950d9e3be2c);
+        
+
+        marker_e607cf2d5468465eaee38500d53125c4.bindPopup(popup_d124fc25a52b4e1b8ded8046d3b46de6)
+        ;
+
+        
+    
+    
+            var marker_8fc79acdc8bc41bbb4ce68911255d229 = L.marker(
+                [40.71921, -73.99116],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_49dfc43178904465ab87c674c08c713b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8fc79acdc8bc41bbb4ce68911255d229.setIcon(icon_49dfc43178904465ab87c674c08c713b);
+        
+    
+        var popup_c842287f5fa2402e970de71fc5254119 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8486a30ee55a41fd99a660263cf947a1 = $(`<div id="html_8486a30ee55a41fd99a660263cf947a1" style="width: 100.0%; height: 100.0%;">['Manhattan Lux Loft.Like.Love.Lots.Look !', '\n $99 per night,\n540 Reviews,\nRoom Type: Private room']</div>`)[0];
+            popup_c842287f5fa2402e970de71fc5254119.setContent(html_8486a30ee55a41fd99a660263cf947a1);
+        
+
+        marker_8fc79acdc8bc41bbb4ce68911255d229.bindPopup(popup_c842287f5fa2402e970de71fc5254119)
+        ;
+
+        
+    
+    
+            var marker_99cf6db9e20d4554a6ee05cc8de7e782 = L.marker(
+                [40.76335, -73.87007],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_5864f4230c3647e28a33c6ca6273a197 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_99cf6db9e20d4554a6ee05cc8de7e782.setIcon(icon_5864f4230c3647e28a33c6ca6273a197);
+        
+    
+        var popup_882750a3248d4ff386100d80652d2d46 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0db885126b364623b884c8820387d140 = $(`<div id="html_0db885126b364623b884c8820387d140" style="width: 100.0%; height: 100.0%;">['Cozy Room Family Home LGA Airport NO CLEANING FEE', '\n $48 per night,\n510 Reviews,\nRoom Type: Private room']</div>`)[0];
+            popup_882750a3248d4ff386100d80652d2d46.setContent(html_0db885126b364623b884c8820387d140);
+        
+
+        marker_99cf6db9e20d4554a6ee05cc8de7e782.bindPopup(popup_882750a3248d4ff386100d80652d2d46)
+        ;
+
+        
+    
+    
+            var marker_667c93d741244be0a569f8061e71bfae = L.marker(
+                [40.67926, -73.97711],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_7deab4ff80294829ad7841ff8f3eebf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_667c93d741244be0a569f8061e71bfae.setIcon(icon_7deab4ff80294829ad7841ff8f3eebf8);
+        
+    
+        var popup_38d82e0205044f0aa75a087752065288 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e19dcb6f69bc4a9e8903a11479c67e36 = $(`<div id="html_e19dcb6f69bc4a9e8903a11479c67e36" style="width: 100.0%; height: 100.0%;">['Private brownstone studio Brooklyn', '\n $160 per night,\n488 Reviews,\nRoom Type: Entire home/apt']</div>`)[0];
+            popup_38d82e0205044f0aa75a087752065288.setContent(html_e19dcb6f69bc4a9e8903a11479c67e36);
+        
+
+        marker_667c93d741244be0a569f8061e71bfae.bindPopup(popup_38d82e0205044f0aa75a087752065288)
+        ;
+
+        
+    
+    
+            var marker_8cbbff90e8c545628b09e94e98aa6ef4 = L.marker(
+                [40.70283, -73.92130999999999],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_ebfecaa84a7848838e2dd79c7bcb38fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8cbbff90e8c545628b09e94e98aa6ef4.setIcon(icon_ebfecaa84a7848838e2dd79c7bcb38fa);
+        
+    
+        var popup_b96ded2ac3074efdb9ee016255272112 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd767fdb07b843e1931d5fe7f757adb1 = $(`<div id="html_bd767fdb07b843e1931d5fe7f757adb1" style="width: 100.0%; height: 100.0%;">['LG Private Room/Family Friendly', '\n $60 per night,\n480 Reviews,\nRoom Type: Private room']</div>`)[0];
+            popup_b96ded2ac3074efdb9ee016255272112.setContent(html_bd767fdb07b843e1931d5fe7f757adb1);
+        
+
+        marker_8cbbff90e8c545628b09e94e98aa6ef4.bindPopup(popup_b96ded2ac3074efdb9ee016255272112)
+        ;
+
+        
+    
+    
+            var marker_2dbec8d8dfaa43d8862a43c601db9292 = L.marker(
+                [40.779437, -73.963244],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_43c7af1cb7984dc0b8a71bb53f6a0e90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2dbec8d8dfaa43d8862a43c601db9292.setIcon(icon_43c7af1cb7984dc0b8a71bb53f6a0e90);
+        
+    
+        var popup_de4be58b507740f8b17713e7a7fd4bb2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ef324eac9c34ff98864a19d040b3c66 = $(`<div id="html_0ef324eac9c34ff98864a19d040b3c66" style="width: 100.0%; height: 100.0%;">Metropolitan Museum of Art</div>`)[0];
+            popup_de4be58b507740f8b17713e7a7fd4bb2.setContent(html_0ef324eac9c34ff98864a19d040b3c66);
+        
+
+        marker_2dbec8d8dfaa43d8862a43c601db9292.bindPopup(popup_de4be58b507740f8b17713e7a7fd4bb2)
+        ;
+
+        
+    
+    
+            marker_2dbec8d8dfaa43d8862a43c601db9292.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebcdf11682d2434c9eefcdf8bbac77e8 = L.marker(
+                [40.75773, -73.985708],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_6361f4a1b4774763a6fc7d68d9c2cf1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ebcdf11682d2434c9eefcdf8bbac77e8.setIcon(icon_6361f4a1b4774763a6fc7d68d9c2cf1e);
+        
+    
+        var popup_3e2f45a1460a4565bd2a526d8d123cb5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0bb059e8e2a4e80b160758a631e86b3 = $(`<div id="html_f0bb059e8e2a4e80b160758a631e86b3" style="width: 100.0%; height: 100.0%;">Times Square</div>`)[0];
+            popup_3e2f45a1460a4565bd2a526d8d123cb5.setContent(html_f0bb059e8e2a4e80b160758a631e86b3);
+        
+
+        marker_ebcdf11682d2434c9eefcdf8bbac77e8.bindPopup(popup_3e2f45a1460a4565bd2a526d8d123cb5)
+        ;
+
+        
+    
+    
+            marker_ebcdf11682d2434c9eefcdf8bbac77e8.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_606c62effbd3464389df6b77846e8125 = L.marker(
+                [40.785091, -73.968285],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_14ba95254b6340dca9b4e78e183b53ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_606c62effbd3464389df6b77846e8125.setIcon(icon_14ba95254b6340dca9b4e78e183b53ae);
+        
+    
+        var popup_0a51630fd80649cd89a0bfdbf1851f50 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36c0660b879b4a2ab85133c98c438da4 = $(`<div id="html_36c0660b879b4a2ab85133c98c438da4" style="width: 100.0%; height: 100.0%;">Central Park</div>`)[0];
+            popup_0a51630fd80649cd89a0bfdbf1851f50.setContent(html_36c0660b879b4a2ab85133c98c438da4);
+        
+
+        marker_606c62effbd3464389df6b77846e8125.bindPopup(popup_0a51630fd80649cd89a0bfdbf1851f50)
+        ;
+
+        
+    
+    
+            marker_606c62effbd3464389df6b77846e8125.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24c9eb462cf0432bb8c20081f965b0da = L.marker(
+                [40.574, -73.978],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_6b3a09e3622749fb9e9484dd8164c925 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_24c9eb462cf0432bb8c20081f965b0da.setIcon(icon_6b3a09e3622749fb9e9484dd8164c925);
+        
+    
+        var popup_ca230a9c497e44839f1a0257660fafa8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3521e1d6c1946899951827a98d0a81f = $(`<div id="html_d3521e1d6c1946899951827a98d0a81f" style="width: 100.0%; height: 100.0%;">Coney Island</div>`)[0];
+            popup_ca230a9c497e44839f1a0257660fafa8.setContent(html_d3521e1d6c1946899951827a98d0a81f);
+        
+
+        marker_24c9eb462cf0432bb8c20081f965b0da.bindPopup(popup_ca230a9c497e44839f1a0257660fafa8)
+        ;
+
+        
+    
+    
+            marker_24c9eb462cf0432bb8c20081f965b0da.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_538cd0ef5612423086b1613d9aaa46a6 = L.marker(
+                [40.711667, -74.013611],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_304036c050c441a796c12d8d171d5bb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_538cd0ef5612423086b1613d9aaa46a6.setIcon(icon_304036c050c441a796c12d8d171d5bb3);
+        
+    
+        var popup_58462c9b1dab424cac5d45cc42bbcfba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_821d0d5aebbe4d1497168519236cca0a = $(`<div id="html_821d0d5aebbe4d1497168519236cca0a" style="width: 100.0%; height: 100.0%;">September 11th Memorial</div>`)[0];
+            popup_58462c9b1dab424cac5d45cc42bbcfba.setContent(html_821d0d5aebbe4d1497168519236cca0a);
+        
+
+        marker_538cd0ef5612423086b1613d9aaa46a6.bindPopup(popup_58462c9b1dab424cac5d45cc42bbcfba)
+        ;
+
+        
+    
+    
+            marker_538cd0ef5612423086b1613d9aaa46a6.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f6bdeef93a142daa3b3922a3778bd6e = L.marker(
+                [40.752813, -73.977215],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_cb814cf3caf446f49f8a0abda1e2016a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6f6bdeef93a142daa3b3922a3778bd6e.setIcon(icon_cb814cf3caf446f49f8a0abda1e2016a);
+        
+    
+        var popup_5e490615db5f4b848d03f12b225d61f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f05b0da2922c45dbbac62413c659590f = $(`<div id="html_f05b0da2922c45dbbac62413c659590f" style="width: 100.0%; height: 100.0%;">Grand Central Terminal</div>`)[0];
+            popup_5e490615db5f4b848d03f12b225d61f0.setContent(html_f05b0da2922c45dbbac62413c659590f);
+        
+
+        marker_6f6bdeef93a142daa3b3922a3778bd6e.bindPopup(popup_5e490615db5f4b848d03f12b225d61f0)
+        ;
+
+        
+    
+    
+            marker_6f6bdeef93a142daa3b3922a3778bd6e.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d38cfe4f390149e7a57d438935f88907 = L.marker(
+                [40.759, -73.985],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_f687b33954cb401ca6e46204b1e3b7bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d38cfe4f390149e7a57d438935f88907.setIcon(icon_f687b33954cb401ca6e46204b1e3b7bf);
+        
+    
+        var popup_4ee380b092014c1cb4b729bc354ef176 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ee30946e49e41379e2770a89966a810 = $(`<div id="html_8ee30946e49e41379e2770a89966a810" style="width: 100.0%; height: 100.0%;">Theater District</div>`)[0];
+            popup_4ee380b092014c1cb4b729bc354ef176.setContent(html_8ee30946e49e41379e2770a89966a810);
+        
+
+        marker_d38cfe4f390149e7a57d438935f88907.bindPopup(popup_4ee380b092014c1cb4b729bc354ef176)
+        ;
+
+        
+    
+    
+            marker_d38cfe4f390149e7a57d438935f88907.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd9584d1db73428abed0658b54c56271 = L.marker(
+                [40.7633, -73.9791],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_e76ad5055c5e487cb2131b0efc689e63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cd9584d1db73428abed0658b54c56271.setIcon(icon_e76ad5055c5e487cb2131b0efc689e63);
+        
+    
+        var popup_734037b38ca743d69ade1ffe1b3d34d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86af2e1015a9426e9eff696abf8b756d = $(`<div id="html_86af2e1015a9426e9eff696abf8b756d" style="width: 100.0%; height: 100.0%;">Quality Bistro - French ($$$)</div>`)[0];
+            popup_734037b38ca743d69ade1ffe1b3d34d3.setContent(html_86af2e1015a9426e9eff696abf8b756d);
+        
+
+        marker_cd9584d1db73428abed0658b54c56271.bindPopup(popup_734037b38ca743d69ade1ffe1b3d34d3)
+        ;
+
+        
+    
+    
+            marker_cd9584d1db73428abed0658b54c56271.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bdfdf8fc83b744e8ab805af90e3c4979 = L.marker(
+                [40.762, -73.9935],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_fcf4362baa0a4cbb8b3f9dc6688ebf70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bdfdf8fc83b744e8ab805af90e3c4979.setIcon(icon_fcf4362baa0a4cbb8b3f9dc6688ebf70);
+        
+    
+        var popup_fc917625dba74e9a9bb1f44b536c36b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47d00e0687344311898815c74d623bb1 = $(`<div id="html_47d00e0687344311898815c74d623bb1" style="width: 100.0%; height: 100.0%;">Kochi - Korean ($$)</div>`)[0];
+            popup_fc917625dba74e9a9bb1f44b536c36b6.setContent(html_47d00e0687344311898815c74d623bb1);
+        
+
+        marker_bdfdf8fc83b744e8ab805af90e3c4979.bindPopup(popup_fc917625dba74e9a9bb1f44b536c36b6)
+        ;
+
+        
+    
+    
+            marker_bdfdf8fc83b744e8ab805af90e3c4979.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ce15f2c58604007b28fdcde639fe52f = L.marker(
+                [40.7392, -73.9867],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_3070d939ca5f4aed9a43ff126b5d909d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2ce15f2c58604007b28fdcde639fe52f.setIcon(icon_3070d939ca5f4aed9a43ff126b5d909d);
+        
+    
+        var popup_a4428934353840b48f20386178bcbc50 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c20a53e8cb34f59a5b7114ae7f348b3 = $(`<div id="html_4c20a53e8cb34f59a5b7114ae7f348b3" style="width: 100.0%; height: 100.0%;">Verōnika - European ($$$)</div>`)[0];
+            popup_a4428934353840b48f20386178bcbc50.setContent(html_4c20a53e8cb34f59a5b7114ae7f348b3);
+        
+
+        marker_2ce15f2c58604007b28fdcde639fe52f.bindPopup(popup_a4428934353840b48f20386178bcbc50)
+        ;
+
+        
+    
+    
+            marker_2ce15f2c58604007b28fdcde639fe52f.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_88480642b4714d308205bf5ec4949a4b = L.marker(
+                [40.7633, -73.9791],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_611cdc77a71e4236b9d09af9c78aa652 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_88480642b4714d308205bf5ec4949a4b.setIcon(icon_611cdc77a71e4236b9d09af9c78aa652);
+        
+    
+        var popup_38a3821ce5194c2f82df47ee4f8eac2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_077b0e93bc0f4f0ead58e20d972d34bf = $(`<div id="html_077b0e93bc0f4f0ead58e20d972d34bf" style="width: 100.0%; height: 100.0%;">Anton's - Italian ($$)</div>`)[0];
+            popup_38a3821ce5194c2f82df47ee4f8eac2d.setContent(html_077b0e93bc0f4f0ead58e20d972d34bf);
+        
+
+        marker_88480642b4714d308205bf5ec4949a4b.bindPopup(popup_38a3821ce5194c2f82df47ee4f8eac2d)
+        ;
+
+        
+    
+    
+            marker_88480642b4714d308205bf5ec4949a4b.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29bd550c77b94dc0b23b1cc43b59c839 = L.marker(
+                [40.7349, -73.9998],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_97ff537e27524fb7a2db0c3b65ea8eea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_29bd550c77b94dc0b23b1cc43b59c839.setIcon(icon_97ff537e27524fb7a2db0c3b65ea8eea);
+        
+    
+        var popup_57030af0b37747bd8de06e8a88bb743b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1de7c523e64441c7af00c65abcd56db1 = $(`<div id="html_1de7c523e64441c7af00c65abcd56db1" style="width: 100.0%; height: 100.0%;">The Banty Rooster - Southern/Comfort Food ($$)</div>`)[0];
+            popup_57030af0b37747bd8de06e8a88bb743b.setContent(html_1de7c523e64441c7af00c65abcd56db1);
+        
+
+        marker_29bd550c77b94dc0b23b1cc43b59c839.bindPopup(popup_57030af0b37747bd8de06e8a88bb743b)
+        ;
+
+        
+    
+    
+            marker_29bd550c77b94dc0b23b1cc43b59c839.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9be55b46c25d46348edd30d246b3ee4f = L.marker(
+                [40.7272, -73.9839],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_0a0deab5a4134678ace5d9a57ab53f51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9be55b46c25d46348edd30d246b3ee4f.setIcon(icon_0a0deab5a4134678ace5d9a57ab53f51);
+        
+    
+        var popup_fdd45caf061745819620b714d0ef8713 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbcb4ae4a4c040f09ea6e32f9c80078e = $(`<div id="html_dbcb4ae4a4c040f09ea6e32f9c80078e" style="width: 100.0%; height: 100.0%;">Mokyo - Tapa/Cocktail Bar ($$)</div>`)[0];
+            popup_fdd45caf061745819620b714d0ef8713.setContent(html_dbcb4ae4a4c040f09ea6e32f9c80078e);
+        
+
+        marker_9be55b46c25d46348edd30d246b3ee4f.bindPopup(popup_fdd45caf061745819620b714d0ef8713)
+        ;
+
+        
+    
+    
+            marker_9be55b46c25d46348edd30d246b3ee4f.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a050dace8f3b46b29429d86d82cda93c = L.marker(
+                [40.7223, -73.0096],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_3c95639ab08048e3b58f425096661f2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a050dace8f3b46b29429d86d82cda93c.setIcon(icon_3c95639ab08048e3b58f425096661f2f);
+        
+    
+        var popup_1afbbce0b8ee499f9b790c676df1d871 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f37dc0babd34d24af92ffa69483658f = $(`<div id="html_1f37dc0babd34d24af92ffa69483658f" style="width: 100.0%; height: 100.0%;">Paisley - Indian ($$)</div>`)[0];
+            popup_1afbbce0b8ee499f9b790c676df1d871.setContent(html_1f37dc0babd34d24af92ffa69483658f);
+        
+
+        marker_a050dace8f3b46b29429d86d82cda93c.bindPopup(popup_1afbbce0b8ee499f9b790c676df1d871)
+        ;
+
+        
+    
+    
+            marker_a050dace8f3b46b29429d86d82cda93c.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_623ebdbd79cb46aca14db0afcb7dd7f4 = L.marker(
+                [40.745, -73.9536],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_cb6e151777a743f183ece94400d02976 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_623ebdbd79cb46aca14db0afcb7dd7f4.setIcon(icon_cb6e151777a743f183ece94400d02976);
+        
+    
+        var popup_a229a088c9f240bd855952ed74be3a62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22e6177e8a314a01bf219137fcfa5406 = $(`<div id="html_22e6177e8a314a01bf219137fcfa5406" style="width: 100.0%; height: 100.0%;">R40 - Argentinian ($$)</div>`)[0];
+            popup_a229a088c9f240bd855952ed74be3a62.setContent(html_22e6177e8a314a01bf219137fcfa5406);
+        
+
+        marker_623ebdbd79cb46aca14db0afcb7dd7f4.bindPopup(popup_a229a088c9f240bd855952ed74be3a62)
+        ;
+
+        
+    
+    
+            marker_623ebdbd79cb46aca14db0afcb7dd7f4.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72a5156bf63d4e2ca039dc37275ef057 = L.marker(
+                [40.7456, -73.9471],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_1eeb04781d914307b62225b577fa4bb9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_72a5156bf63d4e2ca039dc37275ef057.setIcon(icon_1eeb04781d914307b62225b577fa4bb9);
+        
+    
+        var popup_a9119a52edbd4362957482863d42fc1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_113d2f0730cc4f43b4a2780fb3bcf565 = $(`<div id="html_113d2f0730cc4f43b4a2780fb3bcf565" style="width: 100.0%; height: 100.0%;">Mina's NYC - Greek ($$)</div>`)[0];
+            popup_a9119a52edbd4362957482863d42fc1d.setContent(html_113d2f0730cc4f43b4a2780fb3bcf565);
+        
+
+        marker_72a5156bf63d4e2ca039dc37275ef057.bindPopup(popup_a9119a52edbd4362957482863d42fc1d)
+        ;
+
+        
+    
+    
+            marker_72a5156bf63d4e2ca039dc37275ef057.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d987633e33294ccb92a9df7a199c217d = L.marker(
+                [40.7631, -73.9281],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_c0977b55be344ee3b94355c733306d59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d987633e33294ccb92a9df7a199c217d.setIcon(icon_c0977b55be344ee3b94355c733306d59);
+        
+    
+        var popup_df74e11380dc4965b3d165dcff800a73 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_826ccaffb37144fa876fd0420f7c9062 = $(`<div id="html_826ccaffb37144fa876fd0420f7c9062" style="width: 100.0%; height: 100.0%;">La Mian Lounge - Chinese ($$)</div>`)[0];
+            popup_df74e11380dc4965b3d165dcff800a73.setContent(html_826ccaffb37144fa876fd0420f7c9062);
+        
+
+        marker_d987633e33294ccb92a9df7a199c217d.bindPopup(popup_df74e11380dc4965b3d165dcff800a73)
+        ;
+
+        
+    
+    
+            marker_d987633e33294ccb92a9df7a199c217d.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_084785efdfc94586a56bb1d517820dea = L.marker(
+                [40.7616, -73.9184],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_e39efeaa44974f90847fa104f0a0d328 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_084785efdfc94586a56bb1d517820dea.setIcon(icon_e39efeaa44974f90847fa104f0a0d328);
+        
+    
+        var popup_b53e19638d764eb3b112b2ccf1ef1c96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a17ef24724ef4ef78a7f886e9ef75411 = $(`<div id="html_a17ef24724ef4ef78a7f886e9ef75411" style="width: 100.0%; height: 100.0%;">Koyo - Japanese ($$$$)</div>`)[0];
+            popup_b53e19638d764eb3b112b2ccf1ef1c96.setContent(html_a17ef24724ef4ef78a7f886e9ef75411);
+        
+
+        marker_084785efdfc94586a56bb1d517820dea.bindPopup(popup_b53e19638d764eb3b112b2ccf1ef1c96)
+        ;
+
+        
+    
+    
+            marker_084785efdfc94586a56bb1d517820dea.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7014a23928c14645aa4ead65b191b7d3 = L.marker(
+                [40.7002, -73.9075],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_f4d42210760543b289ce448dfedcf1c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7014a23928c14645aa4ead65b191b7d3.setIcon(icon_f4d42210760543b289ce448dfedcf1c7);
+        
+    
+        var popup_e0212407bc5b4b69af56cf401a469c13 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_17d9c6089593493f993a13927e54c0f6 = $(`<div id="html_17d9c6089593493f993a13927e54c0f6" style="width: 100.0%; height: 100.0%;">Cantina 33 - Peruvian ($$)</div>`)[0];
+            popup_e0212407bc5b4b69af56cf401a469c13.setContent(html_17d9c6089593493f993a13927e54c0f6);
+        
+
+        marker_7014a23928c14645aa4ead65b191b7d3.bindPopup(popup_e0212407bc5b4b69af56cf401a469c13)
+        ;
+
+        
+    
+    
+            marker_7014a23928c14645aa4ead65b191b7d3.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7aae803f8212496f818b85ce9ec88efa = L.marker(
+                [40.7461, -73.8955],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_1c8fe7e1887549f2a1be54c46ae8feb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7aae803f8212496f818b85ce9ec88efa.setIcon(icon_1c8fe7e1887549f2a1be54c46ae8feb3);
+        
+    
+        var popup_cb4800ba8c0d48048e73f6cc6d3faeaf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a72e16e4be294bfbb6cc6b8f14a3a8e7 = $(`<div id="html_a72e16e4be294bfbb6cc6b8f14a3a8e7" style="width: 100.0%; height: 100.0%;">Kusina Pinoy Bistro - Filipino/Comfort Food ($$)</div>`)[0];
+            popup_cb4800ba8c0d48048e73f6cc6d3faeaf.setContent(html_a72e16e4be294bfbb6cc6b8f14a3a8e7);
+        
+
+        marker_7aae803f8212496f818b85ce9ec88efa.bindPopup(popup_cb4800ba8c0d48048e73f6cc6d3faeaf)
+        ;
+
+        
+    
+    
+            marker_7aae803f8212496f818b85ce9ec88efa.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1f17ca31a144e309b09580d8d35af70 = L.marker(
+                [40.7472, -73.8899],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_cec1de26e4084a5d80218ae33c3e06c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e1f17ca31a144e309b09580d8d35af70.setIcon(icon_cec1de26e4084a5d80218ae33c3e06c7);
+        
+    
+        var popup_023f19d0a180484689c8051bb8f3f0ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba61305792b84398976b64abee6e4309 = $(`<div id="html_ba61305792b84398976b64abee6e4309" style="width: 100.0%; height: 100.0%;">Birria-Landia - Mexican Food Truck ($)</div>`)[0];
+            popup_023f19d0a180484689c8051bb8f3f0ae.setContent(html_ba61305792b84398976b64abee6e4309);
+        
+
+        marker_e1f17ca31a144e309b09580d8d35af70.bindPopup(popup_023f19d0a180484689c8051bb8f3f0ae)
+        ;
+
+        
+    
+    
+            marker_e1f17ca31a144e309b09580d8d35af70.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a78e9f407ac4344b2c93a2e5bb869a2 = L.marker(
+                [40.7247, -73.955],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_7678677feb7e4239a9343595e1f12428 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0a78e9f407ac4344b2c93a2e5bb869a2.setIcon(icon_7678677feb7e4239a9343595e1f12428);
+        
+    
+        var popup_6424553903f94b10a1215d36a2418cb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2bccae47ca9f4e99acbb917e97deb3bf = $(`<div id="html_2bccae47ca9f4e99acbb917e97deb3bf" style="width: 100.0%; height: 100.0%;">Rules of Thirds - Japanese/Tapas ($$)</div>`)[0];
+            popup_6424553903f94b10a1215d36a2418cb8.setContent(html_2bccae47ca9f4e99acbb917e97deb3bf);
+        
+
+        marker_0a78e9f407ac4344b2c93a2e5bb869a2.bindPopup(popup_6424553903f94b10a1215d36a2418cb8)
+        ;
+
+        
+    
+    
+            marker_0a78e9f407ac4344b2c93a2e5bb869a2.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c73f5290ec1149e2ac07b4ec61ec42ac = L.marker(
+                [40.7219, -73.9602],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_6ab83eab1f4240f7904f26628500eecd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c73f5290ec1149e2ac07b4ec61ec42ac.setIcon(icon_6ab83eab1f4240f7904f26628500eecd);
+        
+    
+        var popup_a9a05c63080a481aa5b38e6c0bc368bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_423af33b52bd4b76b4b967fd3a48181c = $(`<div id="html_423af33b52bd4b76b4b967fd3a48181c" style="width: 100.0%; height: 100.0%;">Le Crocodile - French ($$$)</div>`)[0];
+            popup_a9a05c63080a481aa5b38e6c0bc368bd.setContent(html_423af33b52bd4b76b4b967fd3a48181c);
+        
+
+        marker_c73f5290ec1149e2ac07b4ec61ec42ac.bindPopup(popup_a9a05c63080a481aa5b38e6c0bc368bd)
+        ;
+
+        
+    
+    
+            marker_c73f5290ec1149e2ac07b4ec61ec42ac.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11b4451c48764f7abe6f926be61da452 = L.marker(
+                [40.7179, -73.9595],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_a5222173ebdd47628380899bec69b366 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_11b4451c48764f7abe6f926be61da452.setIcon(icon_a5222173ebdd47628380899bec69b366);
+        
+    
+        var popup_c669f6c1ee0042a18c362c641be047c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9f6a408a8f4460fab74b371031ad94e = $(`<div id="html_d9f6a408a8f4460fab74b371031ad94e" style="width: 100.0%; height: 100.0%;">Bolera - Vietnamese(Modern) ($$)</div>`)[0];
+            popup_c669f6c1ee0042a18c362c641be047c7.setContent(html_d9f6a408a8f4460fab74b371031ad94e);
+        
+
+        marker_11b4451c48764f7abe6f926be61da452.bindPopup(popup_c669f6c1ee0042a18c362c641be047c7)
+        ;
+
+        
+    
+    
+            marker_11b4451c48764f7abe6f926be61da452.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bfd83243ccb4f9799078b2d2c90b4c0 = L.marker(
+                [40.7125, -73.9589],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_cb6b9ae3fffe4094a97bc731d72c786f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9bfd83243ccb4f9799078b2d2c90b4c0.setIcon(icon_cb6b9ae3fffe4094a97bc731d72c786f);
+        
+    
+        var popup_48f46144992f4158832d054c88f21b06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_473dbb5a1628477c82b7d0a969cd6ba6 = $(`<div id="html_473dbb5a1628477c82b7d0a969cd6ba6" style="width: 100.0%; height: 100.0%;">Leo - Pizza ($)</div>`)[0];
+            popup_48f46144992f4158832d054c88f21b06.setContent(html_473dbb5a1628477c82b7d0a969cd6ba6);
+        
+
+        marker_9bfd83243ccb4f9799078b2d2c90b4c0.bindPopup(popup_48f46144992f4158832d054c88f21b06)
+        ;
+
+        
+    
+    
+            marker_9bfd83243ccb4f9799078b2d2c90b4c0.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd1de16869604432b0000cfe53288909 = L.marker(
+                [40.7118, -73.9634],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_e53a33019e5b41f4ba3a71f4758849cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cd1de16869604432b0000cfe53288909.setIcon(icon_e53a33019e5b41f4ba3a71f4758849cd);
+        
+    
+        var popup_6a269d4352e64853bdd67c95ca02ed9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_143417998c414a048338746c1f77472a = $(`<div id="html_143417998c414a048338746c1f77472a" style="width: 100.0%; height: 100.0%;">Noods n’ Chill - Thai ($$)</div>`)[0];
+            popup_6a269d4352e64853bdd67c95ca02ed9c.setContent(html_143417998c414a048338746c1f77472a);
+        
+
+        marker_cd1de16869604432b0000cfe53288909.bindPopup(popup_6a269d4352e64853bdd67c95ca02ed9c)
+        ;
+
+        
+    
+    
+            marker_cd1de16869604432b0000cfe53288909.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c0d9cff3165242259dd35185b73a1230 = L.marker(
+                [40.7118, -73.9431],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_1a8a63dbb1ca429f9f1a3f381fbf4384 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c0d9cff3165242259dd35185b73a1230.setIcon(icon_1a8a63dbb1ca429f9f1a3f381fbf4384);
+        
+    
+        var popup_3481330f9ad14d32a51434346714bb93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a8e397d2322492c9cc59a637d1b4b73 = $(`<div id="html_4a8e397d2322492c9cc59a637d1b4b73" style="width: 100.0%; height: 100.0%;">Pastrami Masters ($$)</div>`)[0];
+            popup_3481330f9ad14d32a51434346714bb93.setContent(html_4a8e397d2322492c9cc59a637d1b4b73);
+        
+
+        marker_c0d9cff3165242259dd35185b73a1230.bindPopup(popup_3481330f9ad14d32a51434346714bb93)
+        ;
+
+        
+    
+    
+            marker_c0d9cff3165242259dd35185b73a1230.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8c0671e0fbf496db5b6727f720d9d96 = L.marker(
+                [40.7078, -73.9459],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_eb7870d9ff8f4cba916231084ce074c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c8c0671e0fbf496db5b6727f720d9d96.setIcon(icon_eb7870d9ff8f4cba916231084ce074c4);
+        
+    
+        var popup_658f7aaf1321494e9163c43170e56106 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65e285c818df4e48bd31c187e84e9cd0 = $(`<div id="html_65e285c818df4e48bd31c187e84e9cd0" style="width: 100.0%; height: 100.0%;">Casa Ora - Venezuelan ($$)</div>`)[0];
+            popup_658f7aaf1321494e9163c43170e56106.setContent(html_65e285c818df4e48bd31c187e84e9cd0);
+        
+
+        marker_c8c0671e0fbf496db5b6727f720d9d96.bindPopup(popup_658f7aaf1321494e9163c43170e56106)
+        ;
+
+        
+    
+    
+            marker_c8c0671e0fbf496db5b6727f720d9d96.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d43ed3a4bf64079a28e961301f3cbe4 = L.marker(
+                [40.779437, -73.963244],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_23808fbad40c4abdad149131390421b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2d43ed3a4bf64079a28e961301f3cbe4.setIcon(icon_23808fbad40c4abdad149131390421b3);
+        
+    
+        var popup_5307d10229f5476eabf98acda976e2fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_078d0600e85f4176becfe7fabf983050 = $(`<div id="html_078d0600e85f4176becfe7fabf983050" style="width: 100.0%; height: 100.0%;">Metropolitan Museum of Art</div>`)[0];
+            popup_5307d10229f5476eabf98acda976e2fd.setContent(html_078d0600e85f4176becfe7fabf983050);
+        
+
+        marker_2d43ed3a4bf64079a28e961301f3cbe4.bindPopup(popup_5307d10229f5476eabf98acda976e2fd)
+        ;
+
+        
+    
+    
+            marker_2d43ed3a4bf64079a28e961301f3cbe4.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9508c2475bf14cd5a602eed953708bf0 = L.marker(
+                [40.75773, -73.985708],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_9a1decf49f2f4763bccc99bc1a80d25c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9508c2475bf14cd5a602eed953708bf0.setIcon(icon_9a1decf49f2f4763bccc99bc1a80d25c);
+        
+    
+        var popup_95742540b38443cdb2a44b738f1049ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0581bf2b6b024c70b07007ccb203c47e = $(`<div id="html_0581bf2b6b024c70b07007ccb203c47e" style="width: 100.0%; height: 100.0%;">Times Square</div>`)[0];
+            popup_95742540b38443cdb2a44b738f1049ea.setContent(html_0581bf2b6b024c70b07007ccb203c47e);
+        
+
+        marker_9508c2475bf14cd5a602eed953708bf0.bindPopup(popup_95742540b38443cdb2a44b738f1049ea)
+        ;
+
+        
+    
+    
+            marker_9508c2475bf14cd5a602eed953708bf0.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_941d5dbb96be4cd1badc7cbcc5f1ecb1 = L.marker(
+                [40.785091, -73.968285],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_262086d1f32940f0a3818aa30816acee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_941d5dbb96be4cd1badc7cbcc5f1ecb1.setIcon(icon_262086d1f32940f0a3818aa30816acee);
+        
+    
+        var popup_247a22924a1f4ff181f47c084fc509f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30470135ced14e01a6e25918939bb505 = $(`<div id="html_30470135ced14e01a6e25918939bb505" style="width: 100.0%; height: 100.0%;">Central Park</div>`)[0];
+            popup_247a22924a1f4ff181f47c084fc509f2.setContent(html_30470135ced14e01a6e25918939bb505);
+        
+
+        marker_941d5dbb96be4cd1badc7cbcc5f1ecb1.bindPopup(popup_247a22924a1f4ff181f47c084fc509f2)
+        ;
+
+        
+    
+    
+            marker_941d5dbb96be4cd1badc7cbcc5f1ecb1.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57e2744bbb22439a9d7131ccd18643a0 = L.marker(
+                [40.574, -73.978],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_da27040e54b54ebe89d0e9f71f6c9a82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_57e2744bbb22439a9d7131ccd18643a0.setIcon(icon_da27040e54b54ebe89d0e9f71f6c9a82);
+        
+    
+        var popup_1d19248d9cc845d6b7eb02cc8103097b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_075872ae60b8416694ca7e096b06bbd5 = $(`<div id="html_075872ae60b8416694ca7e096b06bbd5" style="width: 100.0%; height: 100.0%;">Coney Island</div>`)[0];
+            popup_1d19248d9cc845d6b7eb02cc8103097b.setContent(html_075872ae60b8416694ca7e096b06bbd5);
+        
+
+        marker_57e2744bbb22439a9d7131ccd18643a0.bindPopup(popup_1d19248d9cc845d6b7eb02cc8103097b)
+        ;
+
+        
+    
+    
+            marker_57e2744bbb22439a9d7131ccd18643a0.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a397cc5cd8da4c709a32d8d5d8a411b7 = L.marker(
+                [40.711667, -74.013611],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_0f4fb94bda9946c39d45d979b6d15610 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a397cc5cd8da4c709a32d8d5d8a411b7.setIcon(icon_0f4fb94bda9946c39d45d979b6d15610);
+        
+    
+        var popup_3937ee05ade849999f116cba46c5234c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13ba22f0d602498e9774d7247b2fd673 = $(`<div id="html_13ba22f0d602498e9774d7247b2fd673" style="width: 100.0%; height: 100.0%;">September 11th Memorial</div>`)[0];
+            popup_3937ee05ade849999f116cba46c5234c.setContent(html_13ba22f0d602498e9774d7247b2fd673);
+        
+
+        marker_a397cc5cd8da4c709a32d8d5d8a411b7.bindPopup(popup_3937ee05ade849999f116cba46c5234c)
+        ;
+
+        
+    
+    
+            marker_a397cc5cd8da4c709a32d8d5d8a411b7.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47107ca5ab7c4b57af152f599ef58625 = L.marker(
+                [40.752813, -73.977215],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_ac98673b039e4a90bbafa93d4e3cf837 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_47107ca5ab7c4b57af152f599ef58625.setIcon(icon_ac98673b039e4a90bbafa93d4e3cf837);
+        
+    
+        var popup_a901336a8a72491b827fdb63197d8163 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_812b0af09b994001aceea98abaa9f9b6 = $(`<div id="html_812b0af09b994001aceea98abaa9f9b6" style="width: 100.0%; height: 100.0%;">Grand Central Terminal</div>`)[0];
+            popup_a901336a8a72491b827fdb63197d8163.setContent(html_812b0af09b994001aceea98abaa9f9b6);
+        
+
+        marker_47107ca5ab7c4b57af152f599ef58625.bindPopup(popup_a901336a8a72491b827fdb63197d8163)
+        ;
+
+        
+    
+    
+            marker_47107ca5ab7c4b57af152f599ef58625.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c0cf1223de241e1978fef1b26a3e48b = L.marker(
+                [40.759, -73.985],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_7eac40daf35344c68ee8737f75503501 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7c0cf1223de241e1978fef1b26a3e48b.setIcon(icon_7eac40daf35344c68ee8737f75503501);
+        
+    
+        var popup_d8b5186db2ee4148b6c67448c7fdaf2e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_63cd6e84a6464be69d4fc86aa263dcf5 = $(`<div id="html_63cd6e84a6464be69d4fc86aa263dcf5" style="width: 100.0%; height: 100.0%;">Theater District</div>`)[0];
+            popup_d8b5186db2ee4148b6c67448c7fdaf2e.setContent(html_63cd6e84a6464be69d4fc86aa263dcf5);
+        
+
+        marker_7c0cf1223de241e1978fef1b26a3e48b.bindPopup(popup_d8b5186db2ee4148b6c67448c7fdaf2e)
+        ;
+
+        
+    
+    
+            marker_7c0cf1223de241e1978fef1b26a3e48b.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a90765a82b4475fb593c33493ac84a5 = L.marker(
+                [40.7633, -73.9791],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_740156400e544615902f30fbd3efa918 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2a90765a82b4475fb593c33493ac84a5.setIcon(icon_740156400e544615902f30fbd3efa918);
+        
+    
+        var popup_f7a6a0a2039f4e5badece4b4ee09b7b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d77b4ae755f4bdc8d92daa8d76df05a = $(`<div id="html_1d77b4ae755f4bdc8d92daa8d76df05a" style="width: 100.0%; height: 100.0%;">Quality Bistro - French ($$$)</div>`)[0];
+            popup_f7a6a0a2039f4e5badece4b4ee09b7b0.setContent(html_1d77b4ae755f4bdc8d92daa8d76df05a);
+        
+
+        marker_2a90765a82b4475fb593c33493ac84a5.bindPopup(popup_f7a6a0a2039f4e5badece4b4ee09b7b0)
+        ;
+
+        
+    
+    
+            marker_2a90765a82b4475fb593c33493ac84a5.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_deeddf687aaf461298e0446e3e7becff = L.marker(
+                [40.762, -73.9935],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_63a39874e5cc4b35b6d32bf53021b4ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_deeddf687aaf461298e0446e3e7becff.setIcon(icon_63a39874e5cc4b35b6d32bf53021b4ce);
+        
+    
+        var popup_ec16aedca8794abdb4f3a3b318483b28 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ebb5bdd270f4440c92aa49d9ed7f372a = $(`<div id="html_ebb5bdd270f4440c92aa49d9ed7f372a" style="width: 100.0%; height: 100.0%;">Kochi - Korean ($$)</div>`)[0];
+            popup_ec16aedca8794abdb4f3a3b318483b28.setContent(html_ebb5bdd270f4440c92aa49d9ed7f372a);
+        
+
+        marker_deeddf687aaf461298e0446e3e7becff.bindPopup(popup_ec16aedca8794abdb4f3a3b318483b28)
+        ;
+
+        
+    
+    
+            marker_deeddf687aaf461298e0446e3e7becff.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc08e700715d4e2cbadc49d08ed5ec62 = L.marker(
+                [40.7392, -73.9867],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_1d67eb0596c742978c8e760e64f94fcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fc08e700715d4e2cbadc49d08ed5ec62.setIcon(icon_1d67eb0596c742978c8e760e64f94fcc);
+        
+    
+        var popup_ded42e8893c540fa9d2e932b2c0fbc2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d05221df5a4489f94dc1550706fccf2 = $(`<div id="html_3d05221df5a4489f94dc1550706fccf2" style="width: 100.0%; height: 100.0%;">Verōnika - European ($$$)</div>`)[0];
+            popup_ded42e8893c540fa9d2e932b2c0fbc2f.setContent(html_3d05221df5a4489f94dc1550706fccf2);
+        
+
+        marker_fc08e700715d4e2cbadc49d08ed5ec62.bindPopup(popup_ded42e8893c540fa9d2e932b2c0fbc2f)
+        ;
+
+        
+    
+    
+            marker_fc08e700715d4e2cbadc49d08ed5ec62.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04f036a96e5d49cc96ea4abf6c3082b7 = L.marker(
+                [40.7633, -73.9791],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_d98de441e81640c0a04084e59c0c4d14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_04f036a96e5d49cc96ea4abf6c3082b7.setIcon(icon_d98de441e81640c0a04084e59c0c4d14);
+        
+    
+        var popup_3d0821e3c6184e63b1515c733b6e698d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_592de6a682204c3081eb6d3279998df9 = $(`<div id="html_592de6a682204c3081eb6d3279998df9" style="width: 100.0%; height: 100.0%;">Anton's - Italian ($$)</div>`)[0];
+            popup_3d0821e3c6184e63b1515c733b6e698d.setContent(html_592de6a682204c3081eb6d3279998df9);
+        
+
+        marker_04f036a96e5d49cc96ea4abf6c3082b7.bindPopup(popup_3d0821e3c6184e63b1515c733b6e698d)
+        ;
+
+        
+    
+    
+            marker_04f036a96e5d49cc96ea4abf6c3082b7.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c5c17e78dee46ecad804eb5ed65a67d = L.marker(
+                [40.7349, -73.9998],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_901c1933fdc9499293eae0cbf3c853f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7c5c17e78dee46ecad804eb5ed65a67d.setIcon(icon_901c1933fdc9499293eae0cbf3c853f8);
+        
+    
+        var popup_5f1bde8278a74499a302a558576d3387 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_945edf10a92c415390f6e8d2887be1c9 = $(`<div id="html_945edf10a92c415390f6e8d2887be1c9" style="width: 100.0%; height: 100.0%;">The Banty Rooster - Southern/Comfort Food ($$)</div>`)[0];
+            popup_5f1bde8278a74499a302a558576d3387.setContent(html_945edf10a92c415390f6e8d2887be1c9);
+        
+
+        marker_7c5c17e78dee46ecad804eb5ed65a67d.bindPopup(popup_5f1bde8278a74499a302a558576d3387)
+        ;
+
+        
+    
+    
+            marker_7c5c17e78dee46ecad804eb5ed65a67d.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e128528cf6ac4f22a3df150df879ae44 = L.marker(
+                [40.7272, -73.9839],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_99cd3375af644a62930bdd43e111bfb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e128528cf6ac4f22a3df150df879ae44.setIcon(icon_99cd3375af644a62930bdd43e111bfb1);
+        
+    
+        var popup_61a42ab293134d2fbeddaedd391b3c53 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61b724f073f142178d7011bd64123ff7 = $(`<div id="html_61b724f073f142178d7011bd64123ff7" style="width: 100.0%; height: 100.0%;">Mokyo - Tapa/Cocktail Bar ($$)</div>`)[0];
+            popup_61a42ab293134d2fbeddaedd391b3c53.setContent(html_61b724f073f142178d7011bd64123ff7);
+        
+
+        marker_e128528cf6ac4f22a3df150df879ae44.bindPopup(popup_61a42ab293134d2fbeddaedd391b3c53)
+        ;
+
+        
+    
+    
+            marker_e128528cf6ac4f22a3df150df879ae44.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a9d639eaf2b4b0c8be0cf2cf3f408d3 = L.marker(
+                [40.7223, -73.0096],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_d4b65425b4db430ba068770a041eb85c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7a9d639eaf2b4b0c8be0cf2cf3f408d3.setIcon(icon_d4b65425b4db430ba068770a041eb85c);
+        
+    
+        var popup_5ba6c48268ec449e97d2dc0a452fcc87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f9a3be53e2a48309a3f6265a84adf0f = $(`<div id="html_6f9a3be53e2a48309a3f6265a84adf0f" style="width: 100.0%; height: 100.0%;">Paisley - Indian ($$)</div>`)[0];
+            popup_5ba6c48268ec449e97d2dc0a452fcc87.setContent(html_6f9a3be53e2a48309a3f6265a84adf0f);
+        
+
+        marker_7a9d639eaf2b4b0c8be0cf2cf3f408d3.bindPopup(popup_5ba6c48268ec449e97d2dc0a452fcc87)
+        ;
+
+        
+    
+    
+            marker_7a9d639eaf2b4b0c8be0cf2cf3f408d3.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8fef38f58dbb4f0596770796dd2fcdf2 = L.marker(
+                [40.745, -73.9536],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_2e6c9e4f9bfe464d89196495606681ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8fef38f58dbb4f0596770796dd2fcdf2.setIcon(icon_2e6c9e4f9bfe464d89196495606681ac);
+        
+    
+        var popup_db5b1a534d384097b07444ce61f3ceb7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc6fd42acfd14cdfbe81da2813ab9efe = $(`<div id="html_fc6fd42acfd14cdfbe81da2813ab9efe" style="width: 100.0%; height: 100.0%;">R40 - Argentinian ($$)</div>`)[0];
+            popup_db5b1a534d384097b07444ce61f3ceb7.setContent(html_fc6fd42acfd14cdfbe81da2813ab9efe);
+        
+
+        marker_8fef38f58dbb4f0596770796dd2fcdf2.bindPopup(popup_db5b1a534d384097b07444ce61f3ceb7)
+        ;
+
+        
+    
+    
+            marker_8fef38f58dbb4f0596770796dd2fcdf2.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f774b67e26b14c0fb7986670af480253 = L.marker(
+                [40.7456, -73.9471],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_eb738d4393164f8c8a505ff3675ba016 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f774b67e26b14c0fb7986670af480253.setIcon(icon_eb738d4393164f8c8a505ff3675ba016);
+        
+    
+        var popup_a41a014853c6427285e227e045dcf633 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1706c2f3febd4603a21e41fafb7ebd69 = $(`<div id="html_1706c2f3febd4603a21e41fafb7ebd69" style="width: 100.0%; height: 100.0%;">Mina's NYC - Greek ($$)</div>`)[0];
+            popup_a41a014853c6427285e227e045dcf633.setContent(html_1706c2f3febd4603a21e41fafb7ebd69);
+        
+
+        marker_f774b67e26b14c0fb7986670af480253.bindPopup(popup_a41a014853c6427285e227e045dcf633)
+        ;
+
+        
+    
+    
+            marker_f774b67e26b14c0fb7986670af480253.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ed496b58f484ae2a35851c3e3421894 = L.marker(
+                [40.7631, -73.9281],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_a6a191d45f1145a795d02a914b0a0b55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2ed496b58f484ae2a35851c3e3421894.setIcon(icon_a6a191d45f1145a795d02a914b0a0b55);
+        
+    
+        var popup_8aa16bd90a3b4785ac246c2cf88d1f24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c17cde04013446919df233e09c4742b0 = $(`<div id="html_c17cde04013446919df233e09c4742b0" style="width: 100.0%; height: 100.0%;">La Mian Lounge - Chinese ($$)</div>`)[0];
+            popup_8aa16bd90a3b4785ac246c2cf88d1f24.setContent(html_c17cde04013446919df233e09c4742b0);
+        
+
+        marker_2ed496b58f484ae2a35851c3e3421894.bindPopup(popup_8aa16bd90a3b4785ac246c2cf88d1f24)
+        ;
+
+        
+    
+    
+            marker_2ed496b58f484ae2a35851c3e3421894.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a79cb96e1c844fbac391a559fbb4e27 = L.marker(
+                [40.7616, -73.9184],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_0b3f9bdf68184b69898d59ad4ff034b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3a79cb96e1c844fbac391a559fbb4e27.setIcon(icon_0b3f9bdf68184b69898d59ad4ff034b7);
+        
+    
+        var popup_16426fa75682441da57fcd10bf86a607 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a02df5c85e64bfdaa84764547593a35 = $(`<div id="html_1a02df5c85e64bfdaa84764547593a35" style="width: 100.0%; height: 100.0%;">Koyo - Japanese ($$$$)</div>`)[0];
+            popup_16426fa75682441da57fcd10bf86a607.setContent(html_1a02df5c85e64bfdaa84764547593a35);
+        
+
+        marker_3a79cb96e1c844fbac391a559fbb4e27.bindPopup(popup_16426fa75682441da57fcd10bf86a607)
+        ;
+
+        
+    
+    
+            marker_3a79cb96e1c844fbac391a559fbb4e27.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_492f046bf8d448b980036a93b6a1aec1 = L.marker(
+                [40.7002, -73.9075],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_8e9cccd50c694d279ebfb459674ec9d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_492f046bf8d448b980036a93b6a1aec1.setIcon(icon_8e9cccd50c694d279ebfb459674ec9d2);
+        
+    
+        var popup_777e9a4ce3664a79a6662f95a7082f62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6334ed15b3144d119d2ab26d6cb24c4e = $(`<div id="html_6334ed15b3144d119d2ab26d6cb24c4e" style="width: 100.0%; height: 100.0%;">Cantina 33 - Peruvian ($$)</div>`)[0];
+            popup_777e9a4ce3664a79a6662f95a7082f62.setContent(html_6334ed15b3144d119d2ab26d6cb24c4e);
+        
+
+        marker_492f046bf8d448b980036a93b6a1aec1.bindPopup(popup_777e9a4ce3664a79a6662f95a7082f62)
+        ;
+
+        
+    
+    
+            marker_492f046bf8d448b980036a93b6a1aec1.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f48034885093420e8333b42e4cadf724 = L.marker(
+                [40.7461, -73.8955],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_5626d119e9df4e3e921825a91f39f4f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f48034885093420e8333b42e4cadf724.setIcon(icon_5626d119e9df4e3e921825a91f39f4f2);
+        
+    
+        var popup_c98853c421dc4946affec7215a8b4d3b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e11c219c3d8d4120b2c6eb9ce903f0ca = $(`<div id="html_e11c219c3d8d4120b2c6eb9ce903f0ca" style="width: 100.0%; height: 100.0%;">Kusina Pinoy Bistro - Filipino/Comfort Food ($$)</div>`)[0];
+            popup_c98853c421dc4946affec7215a8b4d3b.setContent(html_e11c219c3d8d4120b2c6eb9ce903f0ca);
+        
+
+        marker_f48034885093420e8333b42e4cadf724.bindPopup(popup_c98853c421dc4946affec7215a8b4d3b)
+        ;
+
+        
+    
+    
+            marker_f48034885093420e8333b42e4cadf724.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6f3371f493d4abb86072cf370d32103 = L.marker(
+                [40.7472, -73.8899],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_d38a36c0d13c4de580cf9988c6193e18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d6f3371f493d4abb86072cf370d32103.setIcon(icon_d38a36c0d13c4de580cf9988c6193e18);
+        
+    
+        var popup_b8b310f9c23849988527eebcb39831f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c842020a748244179f8f2fd4a62e42e4 = $(`<div id="html_c842020a748244179f8f2fd4a62e42e4" style="width: 100.0%; height: 100.0%;">Birria-Landia - Mexican Food Truck ($)</div>`)[0];
+            popup_b8b310f9c23849988527eebcb39831f2.setContent(html_c842020a748244179f8f2fd4a62e42e4);
+        
+
+        marker_d6f3371f493d4abb86072cf370d32103.bindPopup(popup_b8b310f9c23849988527eebcb39831f2)
+        ;
+
+        
+    
+    
+            marker_d6f3371f493d4abb86072cf370d32103.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91bcd9530fd54f408b16aac79e653849 = L.marker(
+                [40.7247, -73.955],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_9c5eec31021e4040ae5670f47db6b661 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_91bcd9530fd54f408b16aac79e653849.setIcon(icon_9c5eec31021e4040ae5670f47db6b661);
+        
+    
+        var popup_893b186934bb486bb3ee6b0056a68c36 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c17926dcfe014cfcb00c278f53eb2b3c = $(`<div id="html_c17926dcfe014cfcb00c278f53eb2b3c" style="width: 100.0%; height: 100.0%;">Rules of Thirds - Japanese/Tapas ($$)</div>`)[0];
+            popup_893b186934bb486bb3ee6b0056a68c36.setContent(html_c17926dcfe014cfcb00c278f53eb2b3c);
+        
+
+        marker_91bcd9530fd54f408b16aac79e653849.bindPopup(popup_893b186934bb486bb3ee6b0056a68c36)
+        ;
+
+        
+    
+    
+            marker_91bcd9530fd54f408b16aac79e653849.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4a2f5e6c05946338eda93b816d15f0c = L.marker(
+                [40.7219, -73.9602],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_93a63ee833d54f999c237e11c82a107e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e4a2f5e6c05946338eda93b816d15f0c.setIcon(icon_93a63ee833d54f999c237e11c82a107e);
+        
+    
+        var popup_b8f0643f9f86441a85e25d411bbdd49f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d970472533947f2a7ad51190f943a28 = $(`<div id="html_6d970472533947f2a7ad51190f943a28" style="width: 100.0%; height: 100.0%;">Le Crocodile - French ($$$)</div>`)[0];
+            popup_b8f0643f9f86441a85e25d411bbdd49f.setContent(html_6d970472533947f2a7ad51190f943a28);
+        
+
+        marker_e4a2f5e6c05946338eda93b816d15f0c.bindPopup(popup_b8f0643f9f86441a85e25d411bbdd49f)
+        ;
+
+        
+    
+    
+            marker_e4a2f5e6c05946338eda93b816d15f0c.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5918b1cb1ba4720945349d919471d93 = L.marker(
+                [40.7179, -73.9595],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_fe4af4eb6b3a4bbdb830708009349186 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a5918b1cb1ba4720945349d919471d93.setIcon(icon_fe4af4eb6b3a4bbdb830708009349186);
+        
+    
+        var popup_19cb20b76d97420da88aba894bdd36d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b706ed0d2614c9eb264d0dcf8d56b66 = $(`<div id="html_8b706ed0d2614c9eb264d0dcf8d56b66" style="width: 100.0%; height: 100.0%;">Bolera - Vietnamese(Modern) ($$)</div>`)[0];
+            popup_19cb20b76d97420da88aba894bdd36d2.setContent(html_8b706ed0d2614c9eb264d0dcf8d56b66);
+        
+
+        marker_a5918b1cb1ba4720945349d919471d93.bindPopup(popup_19cb20b76d97420da88aba894bdd36d2)
+        ;
+
+        
+    
+    
+            marker_a5918b1cb1ba4720945349d919471d93.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb4dddf47cf144058e9aa4ade184d0dc = L.marker(
+                [40.7125, -73.9589],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_02806955dd6f4b65a546ab0c27f17c30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cb4dddf47cf144058e9aa4ade184d0dc.setIcon(icon_02806955dd6f4b65a546ab0c27f17c30);
+        
+    
+        var popup_8f3094fea88e4def899727f002333287 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ed5222b2b37423888af7e65ded0aefa = $(`<div id="html_7ed5222b2b37423888af7e65ded0aefa" style="width: 100.0%; height: 100.0%;">Leo - Pizza ($)</div>`)[0];
+            popup_8f3094fea88e4def899727f002333287.setContent(html_7ed5222b2b37423888af7e65ded0aefa);
+        
+
+        marker_cb4dddf47cf144058e9aa4ade184d0dc.bindPopup(popup_8f3094fea88e4def899727f002333287)
+        ;
+
+        
+    
+    
+            marker_cb4dddf47cf144058e9aa4ade184d0dc.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0b2d73f7b814b72a510385bbc1c6250 = L.marker(
+                [40.7118, -73.9634],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_b2e8e682f72a44a1b49d79d83387bdf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b0b2d73f7b814b72a510385bbc1c6250.setIcon(icon_b2e8e682f72a44a1b49d79d83387bdf8);
+        
+    
+        var popup_5bfb6023b3334200809c4dd6af227423 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a330286996594f9790432bfcd064cee1 = $(`<div id="html_a330286996594f9790432bfcd064cee1" style="width: 100.0%; height: 100.0%;">Noods n’ Chill - Thai ($$)</div>`)[0];
+            popup_5bfb6023b3334200809c4dd6af227423.setContent(html_a330286996594f9790432bfcd064cee1);
+        
+
+        marker_b0b2d73f7b814b72a510385bbc1c6250.bindPopup(popup_5bfb6023b3334200809c4dd6af227423)
+        ;
+
+        
+    
+    
+            marker_b0b2d73f7b814b72a510385bbc1c6250.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53b17a845efc47df8a1811d8144c9ece = L.marker(
+                [40.7118, -73.9431],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_f96bff09e98b4229954a0ac8a86adfa1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_53b17a845efc47df8a1811d8144c9ece.setIcon(icon_f96bff09e98b4229954a0ac8a86adfa1);
+        
+    
+        var popup_823db3f7549e4b80a7a56d6c5ff2e69c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_267f3ab9b8fc475b88793b1bfc664ea6 = $(`<div id="html_267f3ab9b8fc475b88793b1bfc664ea6" style="width: 100.0%; height: 100.0%;">Pastrami Masters ($$)</div>`)[0];
+            popup_823db3f7549e4b80a7a56d6c5ff2e69c.setContent(html_267f3ab9b8fc475b88793b1bfc664ea6);
+        
+
+        marker_53b17a845efc47df8a1811d8144c9ece.bindPopup(popup_823db3f7549e4b80a7a56d6c5ff2e69c)
+        ;
+
+        
+    
+    
+            marker_53b17a845efc47df8a1811d8144c9ece.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1ec835462fb49c7992cc208ad42a243 = L.marker(
+                [40.7078, -73.9459],
+                {}
+            ).addTo(map_fbb9951bb5374aceb7eb06938f16234a);
+        
+    
+            var icon_3096b7b932e54cc887ac2d2c84c2383a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b1ec835462fb49c7992cc208ad42a243.setIcon(icon_3096b7b932e54cc887ac2d2c84c2383a);
+        
+    
+        var popup_1439fc4ce80d4f2a99c65c821daf4c88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0dae4bd397d046da8b1c4605cdb9b370 = $(`<div id="html_0dae4bd397d046da8b1c4605cdb9b370" style="width: 100.0%; height: 100.0%;">Casa Ora - Venezuelan ($$)</div>`)[0];
+            popup_1439fc4ce80d4f2a99c65c821daf4c88.setContent(html_0dae4bd397d046da8b1c4605cdb9b370);
+        
+
+        marker_b1ec835462fb49c7992cc208ad42a243.bindPopup(popup_1439fc4ce80d4f2a99c65c821daf4c88)
+        ;
+
+        
+    
+    
+            marker_b1ec835462fb49c7992cc208ad42a243.bindTooltip(
+                `<div>
+                     Click here to view!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
