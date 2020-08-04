@@ -37,35 +37,72 @@
             <h1 class = "section__title section__title--intro">
                  Netflix & Disney+ : EDA of Streaming Platforms
             </h1>
-            <p class="section__subtitle section__subtitle--intro">Front-end dev</p>
+            <p class="section__subtitle section__subtitle--intro">Data Analyst</p>
             <img src ="img/disney_netflix_cover.jpg" alt="Alex's headshot" class ="intro__img">
         </section>
 
 
         <div class ="portfolio-item-individual">
 
-        <h2>ABSTRACT</h2>
+        <h2 class ="section__title section__title--services">ABSTRACT</h2>
+
         <p>Netflix originally started as a DVD sales and rental by mail then switched to focus on the DVD rental business. In 2007, Netflix expanded their business with streaming media. Netflix is an application that keeps growing up the graph with its popularity, shows and content.
             Disney + launched the subscription video on-demand streaming service on November 12, 2019, in the United States, Canada, and the Netherlands. The service was expanded to Australia, New Zealand, and Puerto Rico a week later, and expanded to select European countries on March 24, 2020.
-            IMDB is an online database of information related to films, television programs, home videos, video games, and streaming content online – including cast, production crew and personal biographies, plot summaries, trivia, ratings, and fan and critical reviews.
+            IMDb is an online database of information related to films, television programs, home videos, video games, and streaming content online – including cast, production crew and personal biographies, plot summaries, trivia, ratings, and fan and critical reviews.
 
             This project is an Exploratory Data Analysis (EDA) of each streaming service, differences, similarities, and ratings distribution of content between the platforms.
             </p>
+        <h4>Inspiration:</h4>
+            <ul>
+                <li>What can we learn about differences between Netflix and Disney +?</li>
+                <li>What can we learn about similarities between Netflix and Disney +?</li>
+                <li>Which month has the most uploads of 'new' content?</li>
+                <li>Factoring in IMDb, what would the the top ten shows/movies on each platform?</li>
+            </ul>
 
 
+            <h2 class ="section__title section__title--services">METHODS</h2>
+
+        <h4>Tools & Libraries used:</h4>
+        <ul>
+            <li>Jupyter Notebook</li>
+            <li>Pandas</li>
+            <li>Matplotlib</li>
+            <li>Plotly</li>
+            <li>Seaborn</li>
+            <li>WordCloud</li>
+
+        </ul>
+        <h4>Data Sources:</h4>
+        <ul>
+            <li><a href ="https://www.kaggle.com/sahib12/netflix-consumption-analysis">Netflix</a></li>
+            <li><a href ="https://www.kaggle.com/unanimad/disney-plus-shows">Disney +</a></li>
+            <li><a href ="https://www.kaggle.com/PromptCloudHQ/imdb-data">IMDb</a></li>
+
+        </ul>
+
+        <h4>Data Cleaning:</h4>
+        <ul>
+            <li>Removed redundent/irrelevant columns</li>
+            <li>Converted to string to datetime type for time analysis</li>
+            <li>Used DatetimeIndex to extract month and year for granular analysis</li>
+
+        </ul>
+
+        <h2 class ="section__title section__title--services">Data Analysis</h2>
             <img src = "img/Netflix/nf_vs_nf_content.png">
 
             <p>Movies takes up more than 50% of the content for both services. Interestingly, Disney + has stand-alone episodes, commonly produced by Disney, a service not performed by Netflix.</p>
 
 
-        <p>Netflix content addition</p>
+        <h5 class ="section__title section__title--services">Netflix content addition</h5>
 
             <img src= "img/Netflix/content_nf_over_time.png">
 
         <p> Netflix is continuously adding content every year. Movies have a larger presence than TV shows. In 2019, at least half of the listings were TV shows. The rise and popularity of TV shows can be attributed to the potential for extended narratives which a 2-2.5 hour movie may not fulfill. This is an interesting area that requires more data to gain insight. Additionally, the low amount of content from 2008 to 2014 needs to be further investigated. https://www.investopedia.com/articles/markets/051215/who-are-netflixs-main-competitors-nflx.asp </p>
 
 
-        <p>Disney+ content addition</p>
+        <h5 class ="section__title section__title--services">Disney+ content addition</h5>
 
             <img src = "img/Netflix/content_ds+_over_time.png">
 
@@ -73,29 +110,44 @@
         <p>Disney + officially launched in the United States on November 12, 2019. This explains the intial surge in content added. However, it was interesting to see that some content was added in early October 2019, which was more than a month prior to the official release date. This could be a mistake in the data entry process.</p>
 
 
-        <p>Frequency of content release by month</p>
+        <h5 class ="section__title section__title--services">Frequency of content release by month</h5>
 
             <img src ="img/Netflix/content_by_month.png">
 
         <p>Netflix tends to release content during the fall months especially during onset of holiday season from Thanksgiving to Christmas. Since a majority of people will be with their families or on holiday vacation, it is the optimal time to release content for viewership.</p>
 
-        <p>What month would I release my content onto Netflix to ensure maximum viewership?</p>
-
             <img src = "img/Netflix/nf_update_month_year.png">
 
             <p> I would focus on any of the months with purple and magenta. The orange and yellow indicate high volume of content so viewership may go down for certain releases.</p>
 
-        <p>Film Rating Comparison</p>
+        <h5 class ="section__title section__title--services">Film ratings comparison</h5>
 
 
             <img src = "img/Netflix/film_ratings_comparison.png">
 
-            <p>Most of the content is rated TV-MA, TV-14 and TV-PG. We can deduce that Netflix's customer base are older adults. Programming rated TV-MA in the United States by the TV Parental Guidelines signifies content for mature audiences only. Programs with this rating are usually not suitable for anyone under 17 years of age (under 18 or 21 in some networks/services). Content may contain strong coarse language, explicit (in some cases, pornographic) strong sexual content, nudity, or intense/graphic violence.
+            <p>Most of the content is rated TV-MA, TV-14 and TV-PG. We can deduce that Netflix's customer base are older adults. Programming rated TV-MA in the United States by the TV Parental Guidelines signifies content for mature audiences only. Programs with this rating are usually not suitable for anyone under 17 years of age (under 18 or 21 in some networks/services). Content may contain strong coarse language, explicit (in some cases, pornographic) strong sexual content, nudity, or intense/graphic violence.</p>
 
-            Disney+ focuses on family-oriented entertainment and features no R and NC-17 rated films and TV-MA shows.</p>
+            <p>Disney+ focuses on family-oriented entertainment and features no R and NC-17 rated films and TV-MA shows.</p>
 
+        <h5 class ="section__title section__title--services">Netflix popular genres</h5>
+            <img src = "img/Netflix/netflix_treemap.png">
 
-        <p>Intergration of IMDb dataset to find highest rated movies by platform</p>
+            <p>Comedies and documentaries are most popular genres on Netflix.</p>
+
+        <h5 class ="section__title section__title--services">Disney + popular genres</h5>
+            <img src = "img/Netflix/disney_treemap.png">
+
+                <p>Seven out of the top ten genres are family-oriented. This is no surprise since majority of movies and TV shows are from Disney, Pixar, Marvel, Star Wars, and National Geographic. All these studio productions are catered to children and young teens.</p>
+
+        <h5 class ="section__title section__title--services">Netflix WordCloud</h5>
+            <img src = "img/Netflix/netflix_wc_.png">
+
+            <p> 'Man' appeared the most with 185 mentions followed by 'love' with 135.</p>
+        <h5 class ="section__title section__title--services">Disney +  WordCloud</h5>
+            <img src = "img/Netflix/disney_wc.png">
+            <p>"Star Wars" has the most mentions at 22 followed by "Movie" at 18. Star Wars is a popular show amongst kids and young teens. Movie is often included in the descriptions of family movies.</p>
+
+        <h5 class ="section__title section__title--services">Top ten content by IMDb reviews</h5>
 
             <img src = "img/Netflix/nf_sunburst.png">
             <img src = "img/Netflix/ds+_sunburst.png">
