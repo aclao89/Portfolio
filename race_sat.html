@@ -37,13 +37,13 @@
             <h1 class = "section__title section__title--intro">
                  Academic success in high schools: What factors influence differences in SAT performance across New York City?
             </h1>
-            <p class="section__subtitle section__subtitle--intro">Front-end dev</p>
+            <p class="section__subtitle section__subtitle--intro">Data Analyst</p>
             <img src ="img/SAT/cover_page.jpg" alt="Alex's headshot" class ="intro__img">
         </section>
 
 
         <div class ="portfolio-item-individual">
-        <h2>Purpose</h2>
+        <h2 class ="section__title section__title--services">ABSTRACT</h2>
         <p>The SAT is a standardized test widely used for college admissions in the United States. The goal of this project was to identify any unintended patterns that would put certain groups at an disadvantage. This is an important step in making the US education system more equal for all. According the US Department of Education website, the challenge of ensuring educational equity is formidable.
             In hopes to be more informed on this matter, I would like to know:
         <ol class ="questions">
@@ -53,7 +53,7 @@
             </ol>
         </p>
             <img src="img/SAT/nyc_school.jfif" alt="">
-        <h3>Methods</h3>
+        <h2 class ="section__title section__title--services">METHODS</h2>
         <p>This analysis used descriptive statistics and data visualizations to explore the following datasets on New York City high schools. Please check the GitHub repo for data links.
         <ol>
             <li>SAT scores for all NYC high schools in 2011-2012</li>
@@ -68,14 +68,14 @@
             <li>The extract, transform, and load (ETL) portion was done as part of dataquests instructions and methodology.</li></p>
         </ol>
 
-        <h3>Notebooks Used</h3>
+        <h3 class ="section__title section__title--services">Notebooks</h3>
         <ul>
             <li>Schools.ipynb - This notebook examined the data source from 1 to 8. The goal was to identify any unintended patterns that would put certain groups at an disadvantage</li>
             <li>NYPD Crime 2001.ipynb - This notebook analyzed the crime rates and cross referenced the heat map with the schools with low safety/respect scores. This serves as a confirmation of unsafe neighborhoods which influences academic performance.</li>
 
         </ul>
 
-        <h1>Data Analysis</h1>
+        <h2 class ="section__title section__title--services">Data Analysis</h2>
         <br></br>
 
         <embed type="text/html" src="img/SAT/saf_circle_map.html" width="1000" height="500">
@@ -86,7 +86,7 @@
 
         <embed type="text/html" src="img/SAT/crime_heatmap.html" width="1000" height="500">
 
-        <p>The heat map shows the frequency of crime in NYC. If you overlay with the map above, most of the schools with low safety & respect scores and low average SAT scores are in the yellow areas.  </p>
+        <p>The heat map shows the frequency of crime in NYC. If you overlay with the map above, most of the schools with low safety & respect scores and low average SAT scores are in the blue areas. </p>
 
             <img src= "img/SAT/saf_sat_corr.jpg">
 
@@ -110,7 +110,7 @@
 
         <ul>
             <li>White and Asian students have a significant positive correlations with SAT scores, whereas Black and Hispanic students have negative correlations with Hispanics being at a slightly higher disadvantage.</li>
-            <li>This trends in the NYC dataset are in agreement with the achievement gaps among groups of students in the same time period (2011). https://nces.ed.gov/nationsreportcard/studies/gaps/ </li>
+            <li>These trends in the NYC dataset are in agreement with the achievement gaps among groups of students in the same time period (2011). https://nces.ed.gov/nationsreportcard/studies/gaps/ </li>
         </ul>
 
         <embed type="text/html" src="img/SAT/hispanic_sat.html"  width="1000" height="500">
@@ -139,7 +139,7 @@
 
             <p>Blacks and Hispanics are underrepresented in 'Elite Schools' whereas Asians and Whites are overrepresented. This could be attributed to certain groups having access to more resources.</p>
 
-        <img src= "img/SAT/race_sat.jpg">
+        <img src= "img/SAT/gender_sat.jpg">
 
             <p>In the plot above, we can see that females have a positive correlation with SAT scores, whereas males have a negative correlation. However, neither correlation is extremely strong.</p>
 
@@ -211,11 +211,23 @@
         <li>Staten Island Technical High School in Oakwood Heights is the best pick in terms of housing price and superb average SAT performance. The housing price in Oakwood Heights are similar to Jamaica but Oakwood has a 300 point advantage on SAT.</li>
     </ul>
         </div>
+<h2 class ="section__title section__title--services">Conclusion</h2>
 
-
-
-
-
+    <ul>
+        <li>There is a moderate corrlation between good SAT scores and high safety & respect scores. This is logical since students can focus on academics if their environment is conducive to learning.</li>
+        <li>Schools in high crime areas tend to score lower on SAT and low safety & respect scores as well.</li>
+        <li>Safety and Respect and student academic expectations have a moderate correlation with good SAT scores.
+            It's also important to note the teachers' safety and respect score (saf_t_11 ~ 0.29) is relevant with good SAT scores.
+            Overall, it makes sense when students and teachers feel safe and have trusting relationships, they can focus on providing a positive environment to achieve better academic results.</li>
+        <li>White and Asian students have a significant positive correlations with SAT scores, whereas Black and Hispanic students have negative correlations with Hispanics being at a slightly higher disadvantage.
+      These trends in the NYC dataset are in agreement with the <a href=" https://nces.ed.gov/nationsreportcard/studies/gaps/">achievement gaps</a> among groups of students in the same time period (2011).</li>
+        <li>Schools with low average SAT scores and high percentages of Hispanic students are often named "International". These schools specialize on students with limited English skills thus these schools tend to score below average because the SAT tests both reading and writing.</li>
+        <li>Schools with high average SAT scores and low percentages of Hispanics are highly selective ('technical') public schools with prestigious reputations</li>
+        <li>Blacks and Hispanics are underrepresented in 'Elite Schools' (SAT score > 1800) whereas Asians and Whites are overrepresented. This could be attributed to certain groups having access to more resources.</li>
+        <li>With SAT above 1400, there is a linear correlation between the AP Takers % and SAT scores. Upon more research, the school had high enrollments standards. Thus, students with higher academia would benefit more from these AP classes than other school. On the contrary, it's suprising to see schools with high shares of AP takers exhibited near or equal the average SAT score. This draws another questions to why these schools exhibit such poor SAT scores given the high share of AP takers. A high share of AP takers does not indicate a strong SAT score.</li>
+        <li>Jamaica and Sheepshead Bay have safety/respect scores of 7.4 and 7.9 with above average SAT scores in area under $1 million for a single family house.</li>
+        
+    </ul>
 
         <footer class ="footer">
             <a href ="mailto:alexclao89@gmail.com" class ="footer__link">alexclao89@gmail.com</a>
