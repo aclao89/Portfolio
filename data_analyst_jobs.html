@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content= "width= device-width, initial-scale=1.0">
+        <title> Alex Lao Data Science Portfolio </title>
+        <link rel ="stylesheet"
+        href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel ="stylesheet"
+        href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity = "sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
+
+        <link href ="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+
+        <link  rel ="stylesheet" href ="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src ="" alt="">
+            </div>
+            <button class ="nav-toggle" aria-label="toggle navigation">
+                <span class ="hamburger"></span>
+            </button>
+            <nav class = "nav">
+                <ul class = "nav__list">
+                        <li class ="nav__item"><a href="index.html#home" class = "nav__link">Home</a></li>
+                        <li class ="nav__item"><a href="index.html#services" class = "nav__link">Skills</a></li>
+                        <li class ="nav__item"><a href="index.html#about" class = "nav__link">About me</a></li>
+                        <li class ="nav__item"><a href="index.html#work" class = "nav__link">My Projects</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <section class ="intro">
+            <h1 class = "section__title section__title--intro">
+                 Data Analyst Job Search
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Data Analyst</p>
+            <img src ="img/Da_jobs/data-analyst-skills.jpg" alt="Alex's headshot" class ="intro__img">
+        </section>
+        <h2 class ="section__title section__title--services">ABSTRACT</h2>
+
+        <div class ="portfolio-item-individual">
+        <p>Data analysis is a process of inspecting, cleansing, transforming and modeling data with the goal of discovering useful information, studying trends and supporting decision-making. Data analysis has multiple facets and approaches, encompassing diverse techniques under a variety of names, and is used in different business, science, and social science domains. In today's business world, data analysis plays a role in making decisions more scientific and helping businesses operate more effectively and efficiently.
+            </p>
+        <p>Looking for a job as a Data Analyst? Perhaps this project can guide you along!</p>
+
+        <h3>Motivations for this project:</h3>
+
+        <p>Amidst the COVID19 pandemic many people lost their jobs, with this dataset it is possible to hone the job search so that more people in need can find employment in technical positions such as data/business analyst. This dataset was created by picklesueat and contains more than 2000 job listings for data analyst positions, with features such as:</p>
+        <ul>
+            <li>Salary Estimate</li>
+            <li>Location</li>
+            <li>Company Rating</li>
+            <li>Industry</li>
+            <li>and more</li>
+        </ul>
+
+        <h3>Questions for exploration:</h3>
+
+        <ul>
+            <li>Top industries and sectors currently hiring</li>
+            <li>Find the best jobs by salary and company rating</li>
+            <li>Show location of job opportunities for those actively searching/applying</li>
+            <li>Predict salary based on industry, location, company revenue</li>
+
+        </ul>
+    </div>
+
+
+        <h2 class ="section__title section__title--services">METHODS</h2>
+
+        <h4>Libraries used:</h4>
+        <ul>
+            <li>Pandas: data manipulation and analysis tool built on Python</li>
+            <li>Numpy: library for the Python programming language, adding support for large, multi-dimensional arrays and matrices</li>
+            <li>Matplotlib: comprehensive library for creating static, animated, and interactive visualizations in Python</li>
+            <li>Seaborn: Python data visualization library based on matplotlib</li>
+            <li>Folium: a powerful Python library that helps you create several types of Leaflet maps</li>
+            <li>Plotly: interactive, open-source, and browser-based graphing library for Python</li>
+            <li>Opencage.geocoder: an API that can be use to look up coordinates of places, and also find out the place a set of coordinates corresponds to</li>
+            <li>Scikit-Learn: predictive data analysis</li>
+            <li>Yellowbrick: a suite of visual analysis and diagnostic tools designed to facilitate machine learning with scikit-learn.</li>
+
+        </ul>
+
+        <h4>Data Cleaning:</h4>
+        <ol>
+            <li>Remove 'Unnamed: 0' column --> .drop() method</li>
+            <li>Parse the Lower and Upper Bounds of Salary Estimate, Company Size, and Revenue for granular analysis --> for loop with .replace(), .split() and .strip() methods</li>
+            <li>Remove the "/n" in the Company Name column --> for loop with .split() method</li>
+            <li>Rows with -1, '-1.0', and '1' were in place in certain columns. It seems like these values were input in place as Null values. I replaced them relevant values in each respective column.</li>
+
+        </ol>
+
+            <h2 class ="section__title section__title--services">Data Analysis & Visualizations</h2>
+        <h4>What are the top 20 industries hiring during COVID19?</h4>
+        <img src = "img/Da_jobs/top20industry.jpg">
+        <ul>
+        <li>The top 2 industries (IT Services and Staffing & Outsourcing) make up 29% of all Data Analyst jobs with a non-null Industry label. My guess would be that a lot of hiring is done by an intermediary Staffing & Outsourcing company as opposed to the actual job Industry.</li>
+        <li>Outsourcing is cost- and time-efficient since it keeps finances flexible, not fixed. In-house – Hiring new staff members don't come cheap. Companies would have to face financial challenges with fixed HR expenses and even intangible costs like time to hire a full-time team. Companies are cutting costs due to the COVID19.</li>
+
+    </ul>
+        <h4>What are the top 20 companies hiring during COVID19?</h4>
+            <img src = "img/Da_jobs/top20companies.png">
+        <ul>
+        <li>As previously mentioned, the first 8 companies are employment and recruitment agencies. The only non-staffing companies are Apple, MUFG (Financial Services), Citi, Bank of New York Mellon, and Molina Healthcare. Apple is a major technology company that designs, develops, and sells consumer electronics, computer software, and online services. Financial institutions and healthcare are essential businesses, required to combat the unprecedented times of COVID19.</li>
+        </ul>
+
+        <h4>What is the distribution of a data analyst's salary?</h4>
+            <img src= "img/Da_jobs/salarydistribution.png">
+        <ul>
+            <li>The lower and upper bound salary estimates are skewed right, meaning the mean is greater than the median.</li>
+            <li>Overall, a Data Analyst can be considered a well paid role.</li>
+    </ul>
+
+        <h4>What are the top 20 industries hiring ordered by median salary?</h4>
+
+            <img src = "img/Da_jobs/top20mediansalarynonadjust.png">
+
+            <ul>
+                <li>The box plots seem to be all over the place. News outlet, chemical manufacturing, hotels only have one point so it's not truly representative since it's one sample for each of those industries.</li>
+                <li>Let's establish a baseline of minimum number of job listings per industry. We will set the cutoff at 15 since that accounts for 90% of non-null postings.</li>
+            </ul>
+
+        <h4>Lower Bound of Median Salary by Industries with at least 15 job postings</h4>
+
+            <img src ="img/Da_jobs/top10indlowsalary.png">
+
+
+        <ol>
+            <li>Biotechnology and pharmaceutical companies both produce medicines, but the medicines made by biotechnology companies are derived from living organisms while those made by pharmaceutical companies generally have a chemical basis.
+            The industry accounted for more than <a href="https://www.selectusa.gov/pharmaceutical-and-biotech-industries-united-states#:~:text=The%20United%20States%20is%20the,world%20leader%20in%20biopharmaceutical%20R%26D.&text=This%20total%20economic%20impact%20includes,from%20suppliers%20and%20worker%20spending.">$1.3 trillion</a> in economic output, representing 4% of total U.S. output in 2017 alone.</li>
+            <li>According to Statista's IT Market Model, the global IT equipment market, which includes PCs and tablets, servers, and IT peripherals, had a size of <a href="https://www.statista.com/markets/418/topic/482/hardware/">$518 billion dollars</a> in 2017.</li>
+            <li>
+                Video games are a billion-dollar business and have been for many years. In 2020, the revenue from the <a href="https://www.statista.com/topics/868/video-games/">worldwide PC gaming market</a> was estimated at almost $37 billion, while the mobile gaming market generated an estimated income of over $77 billion.</li>
+        </ol>
+        <ul>
+            <li>The top 3 industries are highly lucrative and ingrained in daily life. The absense of any of these industries will have an significant negative impact on society in terms of productivity and entertainment.</li>
+            <li>These companies have competitive salaries since they want to attract the best talent and company longevity.</li>
+            </ul>
+
+        <h4>Upper Bound of Median Salary by Industries with at least 15 job postings</h4>
+        <img src ="img/Da_jobs/top10induppersalary.png">
+
+        <ul>
+            <li>Biotech and pharmaceutical industries typically require an terminal degree to conduct research and developement.
+            In addition, they may need to obtain multiple certifications and hours of on-the-job training. These extra hours and committment to a terminal degree usually reflect the upper range of salary expectations.</li>
+            <li>It's a known fact that tech giants such as Google, Facebook, and Apple, offer highly competitive salaries compared to lesser counterparts. This is highly reflective on their lucrative business and revenue.</li>
+        </ul>
+
+        <h4>What are the top 10 sectors by max revenue?</h4>
+            <img src = "img/Da_jobs/top10revenue.png">
+            <ol>
+                <li>The <a href="https://www.ibisworld.com/united-states/industry-trends/biggest-industries-by-revenue/">Health and Medical Insurance sector</a>, which is made up of carriers of private, group and public health, medical and dental insurance, is characterized by growth as a result of consistent increases in healthcare expenditure and medical cost inflation, in addition to a sharp decline in the uninsured rate.</li>
+                <li>In 2019, the <a href="https://www.statista.com/statistics/208715/total-revenue-of-the-top-mining-companies/">mining sectors<a/> leading companies had a total revenue of approximately $692 billion dollars.</li>
+                <li><a href="https://29uuhilmxpbb7gmv3yppgv9t-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/2019-Facts-and-Figures.pdf">Aerospace & Defense's</a> total sales revenue in 2018 exceeded $929 billion, an increase of 4.17% from the previous year. The impact of this growth has been substantial for the nation’s gross domestic product (GDP). In 2018 alone, A&D contributed over $374 billion to the GDP of the United States, representing 1.8% of the entire GDP.</li>
+                <li>In 2019, the <a href="https://www.ibisworld.com/industry-statistics/market-size/wireless-telecommunications-carriers-united-states/">telecommunication sector's</a> leading companies had a total revenue of approximately $276 billion dollar.</li>
+                <li>Finance, retail, manufacturing, media, transportation, and pharmaceuticals are essential and each plays a role in everyday life.</li>
+            </ol>
+
+
+        <h4>What are the top 15 industries by max revenue?</h4>
+            <img src ="img/da_jobs/top10industryrevenue.png">
+
+
+        <ul>
+            <li>The top 15 industries can be deemed "essential businesses."</li>
+            <li>Drug stores, grocery stores and supermarkets need to be open for sanitation supplies, food, and essential goods.</li>
+            <li>Utilities, cable/TV/internet providers are the main sources for productivity since many companies are directing employees to work from home. Students of all ages are engaged in distance learning. Since shelter in place protocol, people turn to the internet and TV for entertainment.</li>
+            <li>Public transportation is vastly utilized by millions of people in the United States especially in densely populated cities such as New York City, San Francisco, and Los Angeles.</li>
+
+        </ul>
+
+
+        <h4>Which states offer the most data analyst roles?</h4>
+
+        <embed src = 'img/Da_jobs/choropleth.html' height="500" width="700">
+
+            <ul>
+                <li>While Silicon Valley is the nation's leading technology-driven economy, there are many notable <a href="https://builtin.com/tech-hubs">tech hubs</a> in the US with exciting opportunities.</li>
+            </ul>
+
+            <ol>
+                <li>It's no surprise that California has the most job offerings due to its population, size, and location of Silicon Valley.</li>
+                <li>Austin, Texas is one of the upcoming tech hubs forming outside of Silicon Valley. The cost of living is much lower than Silicon Valley which attracts many college graduates and young professionals.</li>
+                <li>New York City is a global icon on the forefront of culture, finance, and media. Digital media platform, finance tech, and real estate are some of the few popular industries that employ data analyst roles.</li>
+                <li>Chicago, Illinois has roughly 6,000 tech companies with popular industries of fintech, healthtech, and big data.</li>
+            </ol>
+
+        <h4>Detailed Company Info by Rating</h4>
+
+        <embed src = 'img/Da_jobs/companyvsrating.html' height="600" width="800">
+
+            <ul>
+                <li>This plotly scatter plot shows each company's rating along with location, industry, and lower bound salary.</li>
+                <li>This could be helpful to provide insight based on company reviews which can save their applicaton process by elimination of poorly reviewed companies.</li>
+            </ul>
+
+        <h4>Clustering Regions of Data Analyst roles</h4>
+        <embed src = 'img/Da_jobs/clustermap.html' height="400" width="750">
+
+
+        <ol>
+            <li>Pacific Northwest - 81 jobs </li>
+            <li>Northern California | Silicon Valley - 306 jobs </li>
+            <li>Southern California - 325 jobs </li>
+            <li>Southeast Texas - 397 jobs</li>
+            <li>Colorado - 130 jobs </li>
+            <li>The Midwest - 225 jobs</li>
+            <li>Northeast - 655 jobs</li>
+            <li>The South - 133 jobs</li>
+        </ol>
+
+
+
+        <h2 class ="section__title section__title--services">Takeaways</h2>
+
+        <ol>
+            <li>As I am in the process of finding my first job as a data analyst, this project provided valuable insight that companies are actively hiring. Although big tech companies such as Uber, Airbnb, and LinkedIn exercised mass layoffs due to the COVID19. Many companies are cuttings costs to consolidate their spending since many are uncertain the length of shelter in place and looming residual effects on the economy. Tech giants such as Facebook and Google allowed their employees to work remotely until July 2021.</li>
+            <li>The top 2 industries actively hiring are staffing agencies which make up nearly 30% of all Data Analyst jobs with a non-null entry. Outsourcing is cost- and time-efficient since it keeps finances flexible, not fixed. In-house – Hiring new staff members don't come cheap. Companies would have to face financial challenges with fixed HR expenses and even intangible costs like time to hire a full-time team. Companies are cutting costs due to the COVID19.</li>
+            </li>
+            <li>Nearly half of the top 20 companies hiring (by listings) are recruitment agencies. The only non-staffing companies are Apple, MUFG (Financial Services), Citi, Bank of New York Mellon, and Molina Healthcare.</li>
+            <li>It's no surprise that California has the most job offerings due to its population, size, and Silicon Valley. Texas, New York, Illinois, Washington, and Colorado are flourishing tech hubs outside of the Silicon Valley.</li>
+            <li>People actively on the job hunt may refer to the company ratings plot to filter out desired companies.</li>
+            <li></li>
+            <li></li>
+        </ol>
+
+
+        <footer class ="footer">
+            <a href ="mailto:alexclao89@gmail.com" class ="footer__link">alexclao89@gmail.com</a>
+            <ul class="social-list">
+                <li class = "social-list__item"><a class="social-list__link" href ="https://www.linkedin.com/in/alex-lao-17882182/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+                <li class = "social-list__item"><a class="social-list__link" href = "https://github.com/aclao89">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+                <li class = "social-list__item"><a class="social-list__link" href = "https://www.facebook.com/laolao89?ref=bookmarks">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+        </ul>
+
+    </footer>
+
+    <script src = "js/index.js"></script>
+
+    </body>
+</html>
